@@ -1,0 +1,283 @@
+{
+  "tab": "المستندات",
+  "selectTemplate": "اختر نموذجاً",
+  "create": "إنشاء مستند مخصص",
+  "documentDetails": "تفاصيل المستند",
+  "documentTitle": "عنوان المستند",
+  "generatedVia": "تم الإنشاء آلياً",
+  "officialLegalDocument": "مستند قانوني رسمي",
+  "signatureLabels": {
+    "signature": "التوقيع",
+    "name": "الاسم",
+    "date": "التاريخ"
+  },
+  "amountInWords": "المبلغ بالحروف",
+  "customSections": "أقسام مخصصة",
+  "sectionTitle": "عنوان القسم",
+  "sectionContent": "محتوى القسم",
+  "addSection": "إضافة قسم جديد",
+  "deleteSection": "حذف القسم",
+  "templates": {
+    "legal-notice-v1": {
+      "name": "إنذار عدلي (مطالبة بدين)",
+      "content": "تحية طيبة وبعد،\n\nالموضوع: إنذار رسمي للمطالبة بمبلغ {{amount}} {{currency}}\n\nبالإشارة إلى الموضوع أعلاه، وبصفتي وكيلاً عن السيد/شركة {{partyB.name}}، نود إخطاركم رسمياً بضرورة سداد المبلغ المستحق والمقدر بـ {{amount}} {{currency}}، وذلك في موعد أقصاه {{dueDate}}.\n\nوفي حال عدم الالتزام بالسداد خلال المدة المذكورة، فإن موكلي سيضطر لاتخاذ كافة الإجراءات القانونية الكفيلة بحفظ حقوقه، بما في ذلك اللجوء إلى القضاء المختص.\n\nوتفضلوا بقبول فائق الاحترام.",
+      "variables": {
+        "partyB.name": {
+          "label": "اسم المدين"
+        },
+        "amount": {
+          "label": "المبلغ المستحق"
+        },
+        "currency": {
+          "label": "العملة"
+        },
+        "dueDate": {
+          "label": "تاريخ الاستحقاق النهائي"
+        }
+      }
+    },
+    "resolution-v1": {
+      "name": "قرار مجلس إدارة",
+      "content": "قرار مجلس الإدارة رقم ({{resolutionNumber}})\n\nاجتمع مجلس إدارة شركة {{companyName}} بتاريخ {{meetingDate}}، وقد تقرر بالإجماع ما يلي:\n\n{{resolutionDetails}}\n\nوقد فوّض المجلس السيد/ {{authorizedPerson}} لاتخاذ كافة الإجراءات اللازمة لتنفيذ هذا القرار.\n\nتوقيع أعضاء مجلس الإدارة:",
+      "variables": {
+        "resolutionNumber": {
+          "label": "رقم القرار"
+        },
+        "companyName": {
+          "label": "اسم الشركة"
+        },
+        "meetingDate": {
+          "label": "تاريخ الاجتماع"
+        },
+        "resolutionDetails": {
+          "label": "تفاصيل القرار"
+        },
+        "authorizedPerson": {
+          "label": "الشخص المفوض"
+        }
+      }
+    },
+    "poa-v1": {
+      "name": "توكيل خاص (إداري)",
+      "content": "أنا الموقع أدناه/ {{principalName}}، أحمل بطاقة مدنية رقم {{principalId}}، بصفتي ({{principalRole}})، وكلت بموجب هذا السيد/ {{agentName}}، بطاقة مدنية رقم {{agentId}}، لينوب عني ويقوم بـ:\n\n{{poaScope}}\n\nوهذا التوكيل صالح لمدة {{validityPeriod}} من تاريخ صدوره، ولا يحق للوكيل توكيل الغير إلا بإذن كتابي مسبق.\n\nتوقيع الموكل:",
+      "variables": {
+        "principalName": {
+          "label": "اسم الموكل"
+        },
+        "principalId": {
+          "label": "الرقم المدني للموكل"
+        },
+        "principalRole": {
+          "label": "صفة الموكل (مدير، شريك...)"
+        },
+        "agentName": {
+          "label": "اسم الوكيل"
+        },
+        "agentId": {
+          "label": "الرقم المدني للوكيل"
+        },
+        "poaScope": {
+          "label": "نطاق التوكيل"
+        },
+        "validityPeriod": {
+          "label": "مدة السريان"
+        }
+      }
+    },
+    "memo-v1": {
+      "name": "مذكرة داخلية",
+      "content": "مذكرة داخلية\n\nإلى: {{toGroup}}\nمن: {{fromGroup}}\nالتاريخ: {{memoDate}}\nالموضوع: {{memoSubject}}\n\n{{memoBody}}\n\nمع التقدير،\n\n{{senderName}}",
+      "variables": {
+        "toGroup": {
+          "label": "إلى (الجهة/القسم)"
+        },
+        "fromGroup": {
+          "label": "من (الجهة/القسم)"
+        },
+        "memoDate": {
+          "label": "تاريخ المذكرة"
+        },
+        "memoSubject": {
+          "label": "الموضوع"
+        },
+        "memoBody": {
+          "label": "نص المذكرة"
+        },
+        "senderName": {
+          "label": "اسم المرسل"
+        }
+      }
+    },
+    "meeting-v1": {
+      "name": "محضر اجتماع",
+      "content": "محضر اجتماع {{meetingTitle}}\n\nالتاريخ: {{meetingDate}}\nالمكان: {{location}}\nالحضور: {{attendees}}\n\nجدول الأعمال:\n{{agenda}}\n\nالقرارات والتوصيات:\n{{outcomes}}\n\nوقت الانتهاء: {{endTime}}",
+      "variables": {
+        "meetingTitle": {
+          "label": "عنوان الاجتماع"
+        },
+        "meetingDate": {
+          "label": "تاريخ الاجتماع"
+        },
+        "location": {
+          "label": "المكان"
+        },
+        "attendees": {
+          "label": "الحضور"
+        },
+        "agenda": {
+          "label": "جدول الأعمال"
+        },
+        "outcomes": {
+          "label": "النتائج والتوصيات"
+        },
+        "endTime": {
+          "label": "وقت الانتهاء"
+        }
+      }
+    },
+    "demand-v1": {
+      "name": "إخطار نهائي قبل اللجوء للقضاء",
+      "content": "إلى: {{recipientName}}\n\nالموضوع: إخطار نهائي ومطالبة أخيرة\n\nنحيطكم علماً بأننا قمنا بمطالبتكم مراراً بسداد المستحقات المترتبة عليكم والبالغة {{amount}} {{currency}}، إلا أنكم لم تحركوا ساكناً.\n\nوعليه، فإن هذا هو الإخطار الأخير لكم بضرورة السداد في موعد أقصاه {{deadlineDate}}، وإلا فإننا سنشرع في قيد دعوى قضائية للمطالبة بالمبدأ والتعويض والمصاريف دون سابق إنذار آخر.\n\nالمرسل: {{senderName}}",
+      "variables": {
+        "recipientName": {
+          "label": "اسم المستلم"
+        },
+        "amount": {
+          "label": "المبلغ المستحق"
+        },
+        "currency": {
+          "label": "العملة"
+        },
+        "deadlineDate": {
+          "label": "المعد النهائي للسداد"
+        },
+        "senderName": {
+          "label": "اسم المرسل"
+        }
+      }
+    },
+    "warning-v1": {
+      "name": "إنذار موظف",
+      "content": "إنذار ({{warningLevel}})\n\nإلى الموظف/ {{employeeName}}\nالرقم الوظيفي: {{employeeId}}\n\nبالإشارة إلى المخالفة المرتكبة والمتمثلة في:\n{{violationDesc}}\n\nبناءً عليه، يتم توجيه هذا الإنذار لكم، ونأمل عدم تكرار مثل هذا السلوك مستقبلاً لتجنب الإجراءات القانونية والإدارية المشددة.\n\nإدارة الموارد البشرية\nتوقيع الموظف بالعلم:",
+      "variables": {
+        "warningLevel": {
+          "label": "مستوى الإنذار (أول، ثاني...)"
+        },
+        "employeeName": {
+          "label": "اسم الموظف"
+        },
+        "employeeId": {
+          "label": "الرقم الوظيفي"
+        },
+        "violationDesc": {
+          "label": "وصف المخالفة"
+        }
+      }
+    },
+    "delegation-v1": {
+      "name": "تفويض إداري",
+      "content": "بصفتي ({{principalRole}})، أفوض بموجب هذا السيد/ {{delegateName}}، للقيام بـ {{authorityScope}}، وذلك لتمثيل الشركة أمام الجهات الرسمية خلال الفترة من {{startDate}} إلى {{endDate}}.\n\nالمفوض:\nالتوقيع:",
+      "variables": {
+        "principalRole": {
+          "label": "صفة المفوض"
+        },
+        "delegateName": {
+          "label": "اسم المفوض إليه"
+        },
+        "authorityScope": {
+          "label": "نطاق التفويض"
+        },
+        "startDate": {
+          "label": "تاريخ البدء"
+        },
+        "endDate": {
+          "label": "تاريخ الانتهاء"
+        }
+      }
+    },
+    "acceptance-v1": {
+      "name": "كتاب قبول عرض كظيفي",
+      "content": "إلى إدارة الموارد البشرية - شركة {{companyName}}\n\nيسعدني إبلاغكم بقبولي الرسمي لعرض العمل المقدم لي لشغل وظيفة {{jobTitle}}، وفقاً لكافة الشروط والامتيازات المذكورة في العرض.\n\nوسيكون تاريخ مباشرتي للعمل هو {{joiningDate}}.\n\nوتفضلوا بقبول الاحترام.\n\nالاسم: {{candidateName}}\nالتوقيع:",
+      "variables": {
+        "companyName": {
+          "label": "اسم الشركة"
+        },
+        "jobTitle": {
+          "label": "المسمى الوظيفي"
+        },
+        "joiningDate": {
+          "label": "تاريخ المباشرة"
+        },
+        "candidateName": {
+          "label": "اسم المرشح"
+        }
+      }
+    },
+    "resignation-v1": {
+      "name": "إقرار استلام استقالة",
+      "content": "تشهد شركة {{companyName}} بأنها استلمت استقالة السيد/ {{employeeName}}، بتاريخ {{resignationDate}}، على أن يكون آخر يوم عمل له هو {{lastWorkingDay}}.\n\nوتتمنى له الشركة التوفيق في مسيرته المستقبلية.\n\nتوقيع المدير المسؤول:",
+      "variables": {
+        "companyName": {
+          "label": "اسم الشركة"
+        },
+        "employeeName": {
+          "label": "اسم الموظف"
+        },
+        "resignationDate": {
+          "label": "تاريخ تقديم الاستقالة"
+        },
+        "lastWorkingDay": {
+          "label": "أخر يوم عمل"
+        }
+      }
+    },
+    "receipt-voucher-v1": {
+      "name": "سند قبض",
+      "content": "التاريخ: {{issueDate}}\r\nالمبلغ: {{amount}} {{currency}}\r\n\r\nاستلمنا من السيد/السادة: {{receivedFrom}}\r\nمبلغاً وقدره: {{amountInWords}}\r\nوذلك عن: {{purpose}}\r\n\r\nتوقيع المستلم:\r\nالاسم: {{recipientName}}\r\nالتوقيع: {{recipientSignature}}"
+    },
+    "payment-voucher-v1": {
+      "name": "سند صرف",
+      "content": "التاريخ: {{issueDate}}\r\nالمبلغ: {{amount}} {{currency}}\r\n\r\nصُرف للسيد/السادة: {{paidTo}}\r\nمبلغاً وقدره: {{amountInWords}}\r\nوذلك عن: {{purpose}}\r\n\r\nتوقيع الدافع:\r\nالاسم: {{payerName}}\r\nالتوقيع: {{payerSignature}}"
+    },
+    "salary-certificate-v1": {
+      "name": "شهادة راتب",
+      "content": "التاريخ: {{issueDate}}\r\n\r\nشهادة راتب\r\n\r\nتشهد الشركة بأن السيد/ {{employeeName}}، {{nationality}} الجنسية، ويحمل بطاقة مدنية رقم {{civilId}}، يعمل لدينا بوظيفة \"{{position}}\" منذ تاريخ {{joinDate}} وما زال على رأس عمله حتى تاريخه.\r\n\r\nيتقاضى الموظف المذكور راتباً شهرياً إجمالياً قدره {{totalSalary}} {{currency}} ({{amountInWords}}).\r\n\r\n{{#if bankName}}\r\nيتم تحويل الراتب إلى بنك: {{bankName}}\r\nرقم الآيبان: {{iban}}\r\n{{/if}}\r\n\r\nوقد أعطيت له هذه الشهادة بناءً على طلبه لتقديمها لمن يهمه الأمر دون أدنى مسؤولية على الشركة تجاه حقوق الغير.\r\n\r\nتوقيع المسؤول:\r\nالاسم: {{managerName}}\r\nالتوقيع: {{managerSignature}}"
+    },
+    "experience-certificate-v1": {
+      "name": "شهادة خبرة",
+      "content": "التاريخ: {{issueDate}}\r\n\r\nشهادة خبرة\r\n\r\nتشهد الشركة بأن السيد/ {{employeeName}} قد عمل لدينا بوظيفة \"{{position}}\" خلال الفترة من {{startDate}} وحتى {{endDate}}.\r\n\r\n{{#if performance}}\r\nوخلال فترة عمله، {{performance}}.\r\n{{/if}}\r\n\r\nنتمنى له التوفيق والنجاح في مستقبله المهني.\r\n\r\nإدارة الموارد البشرية\r\nالاسم: {{managerName}}\r\nالتوقيع: {{managerSignature}}"
+    },
+    "job-offer-v1": {
+      "name": "عرض وظيفي",
+      "content": "التاريخ: {{issueDate}}\r\nإلى السيد/ {{candidateName}}\r\n\r\nالموضوع: عرض وظيفي\r\n\r\nيسرنا أن نعرض عليك الانضمام إلى فريقنا لشغل وظيفة \"{{position}}\".\r\n\r\nتفاصيل العرض:\r\n- تاريخ المباشرة المتوقع: {{startDate}}\r\n- الراتب الأساسي: {{salary}} {{currency}}\r\n- البدلات الشهرية: {{allowances}} {{currency}}\r\n- الإجازة السنوية: {{vacation}} يوماً\r\n\r\nهذا العرض سارٍ لمدة أسبوع من تاريخه. يرجى التوقيع على نسخة من هذا الخطاب في حال القبول.\r\n\r\nمع التقدير،\r\n\r\nالاسم: {{managerName}}\r\nالتوقيع: {{managerSignature}}"
+    },
+    "clearance-letter-v1": {
+      "name": "شهادة براءة ذمة",
+      "content": "التاريخ: {{issueDate}}\r\n\r\nشهادة براءة ذمة\r\n\r\nتشهد الشركة بأن السيد/السادة: {{partyName}} (رقم: {{idNumber}}) قد قام بتسوية كافة الالتزامات والمستحقات المترتبة عليه تجاه الشركة بمناسبة {{reason}}.\r\n\r\nوعليه، فإن الشركة تبرئ ذمته من أي مطالبات مالية أو عينية تتعلق بالفترة السابقة وحتى تاريخه.\r\n\r\nهذه الشهادة لا تلغي أي التزامات مستقبلية أو ضمانات سارية المفعول (إن وجدت).\r\n\r\nعن الشركة:\r\nالاسم: {{managerName}}\r\nالتوقيع: {{managerSignature}}"
+    },
+    "noc-letter-v1": {
+      "name": "شهادة عدم ممانعة",
+      "content": "التاريخ: {{issueDate}}\r\nإلى: {{recipientAuthority}}\r\n\r\nالموضوع: شهادة عدم ممانعة\r\n\r\nتحية طيبة وبعد،\r\n\r\nنحيطكم علماً بأننا لا نمانع من قيام السيد/ {{employeeName}}، ويحمل بطاقة مدنية رقم {{civilId}}، بـ {{purpose}}، وذلك وفقاً للنظم واللوائح المعمول بها لديكم.\r\n\r\nصدرت هذه الشهادة بناءً على طلبه دون أدنى مسؤولية على الشركة تجاه حقوق الغير.\r\n\r\nوتفضلوا بقبول فائق الاحترام،\r\n\r\nالاسم: {{managerName}}\r\nالتوقيع: {{managerSignature}}"
+    },
+    "demand-letter-v1": {
+      "name": "خطاب مطالبة مالية",
+      "content": "التاريخ: {{issueDate}}\r\nإلى السيد/السادة: {{debtorName}}\r\n\r\nالموضوع: مطالبة مالية نهائية - مستحقات متأخرة\r\n\r\nتحية طيبة،\r\n\r\nيرجى العلم بأن سجلاتنا تشير إلى وجود مبلغ مستحق قدره {{amount}} {{currency}} ({{amountInWords}}) بموجب المرجع رقم {{reference}} والذي كان مستحق السداد في {{dueDate}}.\r\n\r\nنرجو منكم المبادرة بسداد المبلغ المذكور في موعد أقصاه {{deadline}} لتجنب اتخاذ أي إجراءات قانونية لتحصيل المبلغ.\r\n\r\nنأمل حل الموضوع ودياً وسرعة التجاوب.\r\n\r\nوتفضلوا بقبول الاحترام،\r\n\r\nالاسم: {{senderName}}\r\nالتوقيع: {{senderSignature}}"
+    },
+    "meeting-minutes-v1": {
+      "name": "محضر اجتماع",
+      "content": "محضر اجتماع\r\n\r\nالتاريخ: {{meetingDate}}\r\nالمكان: {{location}}\r\n\r\nالحضور:\r\n{{attendees}}\r\n\r\nجدول الأعمال:\r\n{{agenda}}\r\n\r\nالقرارات والتوصيات:\r\n{{decisions}}\r\n\r\nتم إعداد المحضر بواسطة:\r\nالاسم: {{secretaryName}}\r\nالتوقيع: {{secretarySignature}}"
+    },
+    "termination-letter-v1": {
+      "name": "خطاب إنهاء خدمات",
+      "content": "التاريخ: {{issueDate}}\r\nإلى السيد/ {{employeeName}}\r\n\r\nالموضوع: إنهاء الخدمات\r\n\r\nيؤسفنا إبلاغك بقرار الشركة بإنهاء خدماتك اعتباراً من نهاية يوم عمل {{lastWorkingDate}}.\r\n{{#if reason}}\r\nوذلك بسبب: {{reason}}.\r\n{{/if}}\r\n\r\nيرجى مراجعة قسم الموارد البشرية لاستكمال إجراءات المخالصة وتسليم ما بعهدتكم.\r\n\r\nنشكر لكم جهودكم خلال فترة عملكم معنا ونتمنى لكم التوفيق.\r\n\r\nعن الشركة:\r\nالاسم: {{managerName}}\r\nالتوقيع: {{managerSignature}}"
+    },
+    "warning-letter-v1": {
+      "name": "خطاب إنذار",
+      "content": "التاريخ: {{issueDate}}\r\nإلى السيد/ {{recipientName}}\r\nالعنوان: {{recipientAddress}}\r\n\r\nالموضوع: {{subject}}\r\n\r\nتحية وبعد،\r\n{{body}}\r\n\r\nوتفضلوا بقبول فائق الاحترام.\r\n\r\nالمُنذِر،\r\nالاسم: {{senderName}}\r\nالتوقيع: {{senderSignature}}"
+    },
+    "trust-receipt-v1": {
+      "name": "إيصال أمانة",
+      "content": "استلمت أنا الموقع أدناه/ {{receiverName}}\r\nبطاقة مدنية رقم/ {{receiverCivilId}}\r\nمن السيد/ {{receivedFrom}}\r\nمبلغ وقدره {{amount}} {{currency}} ({{amountInWords}})\r\nوذلك على سبيل الأمانة لتوصيله إلى السيد/ {{deliverTo}}\r\nوإذا لم أقم بتسليم المبلغ أكون خائناً ومبدداً للأمانة وأتحمل المسؤولية الجنائية والمدنية المترتبة على ذلك.\r\n\r\nوهذا إقرار مني بذلك،،\r\nالمقر بما فيه،\r\nالاسم: {{receiverName}}\r\nالتوقيع: {{receiverSignature}}\r\n\r\nالشاهد:\r\nالاسم: {{witnessName}}\r\nالتوقيع: {{witnessSignature}}"
+    }
+  }
+}

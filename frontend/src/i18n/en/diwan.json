@@ -1,0 +1,301 @@
+{
+  "tab": "Legal Diwan",
+  "title": "Legal Diwan",
+  "searchIn": "Legal Search in",
+  "searchPlaceholder": "Search for legislation, decree, or legal advice...",
+  "searchBtn": "Smart Search",
+  "searchFailed": "Search failed, please try again.",
+  "aiSummary": "Legal Assistant Summary (AI)",
+  "newsType": "Latest News",
+  "newsUpdated": "Legal news updated successfully.",
+  "lastUpdated": "Last Update:",
+  "manualUpdate": "Manual Update",
+  "officialLink": "Official Link",
+  "visitService": "Visit Service",
+  "eservice": "E-Service",
+  "form": "Form / Document",
+  "info": "Information / Guide",
+  "files": "Files & Attachments",
+  "downloadFile": "Download File",
+  "itemsCount": "Items/Legislation",
+  "download": "Download",
+  "govTitle": "Unified Government Portal",
+  "govSubtitle": "Quick access to official services",
+  "noData": "No data available for this country at the moment.",
+  "systems": "Legal Management Systems",
+  "viewSystem": "Enter System",
+  "add": "Add Record",
+  "edit": "Edit",
+  "view": "View",
+  "delete": "Delete",
+  "save": "Save",
+  "cancel": "Cancel",
+  "caseNo": "Case Number",
+  "contractRef": "Contract Ref",
+  "poaNo": "POA Number",
+  "client": "Client",
+  "principal": "Principal",
+  "agent": "Agent",
+  "subject": "Subject",
+  "court": "Court",
+  "type": "Type",
+  "lawyer": "Lawyer/Consultant",
+  "status": "Status",
+  "actions": "Actions",
+  "gazetteTitle": "Official Gazette Archive",
+  "addIssue": "Add New Issue",
+  "issueNo": "Issue Number",
+  "defaultNews": "Welcome to the Legal Diwan. Select a country to browse news and legislation.",
+  "officialLegalDocument": "Official Legal Document",
+  "statusLabels": {
+    "ongoing": "Ongoing",
+    "verdict": "Verdict Pending",
+    "active": "Active",
+    "closed": "Completed",
+    "expired": "Expired"
+  },
+  "labor": "Labor Affairs",
+  "justice": "Justice & Judiciary",
+  "corporate": "Corporate Affairs",
+  "general": "General Matters",
+  "news": "News & Decrees",
+  "legislation": "Legislation & Laws",
+  "forms": "Forms & Documents",
+  "systemTitles": {
+    "system_cases": "Case Management & Tracking System",
+    "system_contracts": "Consultation & Contract Management System",
+    "system_poa": "Power of Attorney Management System"
+  },
+  "countries": {
+    "kw": "State of Kuwait",
+    "sa": "Saudi Arabia",
+    "ae": "United Arab Emirates",
+    "qa": "State of Qatar",
+    "bh": "Kingdom of Bahrain",
+    "om": "Sultanate of Oman",
+    "eg": "Egypt",
+    "iq": "Iraq",
+    "lb": "Lebanon"
+  },
+  "resources": {
+    "kw": {
+      "gov": "Gov Services & Forms",
+      "leg": "Legal Portal (MOJ)",
+      "gazette": "Official Gazette"
+    },
+    "sa": {
+      "gov": "Gov Services (Najiz)",
+      "leg": "Laws & Regulations (Experts)",
+      "gazette": "Official Gazette"
+    },
+    "ae": {
+      "gov": "Government Services",
+      "leg": "UAE Legislations (UAELAB)"
+    },
+    "qa": {
+      "gov": "Government Services",
+      "leg": "Al-Meezan Legal Portal"
+    },
+    "bh": {
+      "gov": "Government Services",
+      "leg": "Legislation Commission"
+    },
+    "om": {
+      "gov": "Government Services",
+      "leg": "Oman Laws Portal (Qanoon)"
+    },
+    "eg": {
+      "gov": "Government Services",
+      "leg": "Court of Cassation (Legislation)"
+    },
+    "iq": {
+      "gov": "Government Services",
+      "leg": "Iraqi Local Legislation"
+    },
+    "lb": {
+      "gov": "Government Services",
+      "leg": "Official Gazette (Legislation)"
+    }
+  },
+  "gazette": {
+    "issue": "Issue {{number}} - {{year}}",
+    "simpleIssue": "Issue {{number}}"
+  },
+  "files_list": {
+    "pam_dues": "Financial Dues Receipt - Arabic/Urdu",
+    "pam_allowance": "Social & Children Allowance Form",
+    "pam_settlement": "Labor Wages Settlement Commitment",
+    "domestic_triple": "Triple Recruitment Contract (Domestic)",
+    "domestic_bilateral": "Bilateral Contract (Domestic Worker)",
+    "safety_record": "Work Injury Record Form",
+    "accident_report": "Serious Accident Report"
+  },
+  "gov": {
+    "manpower": {
+      "title": "Public Authority for Manpower",
+      "services": {
+        "forms": {
+          "title": "Authority Forms (Financial & Admin)",
+          "desc": "Financial acknowledgments, wage commitments, and allowance forms."
+        },
+        "domestic": {
+          "title": "Domestic Worker Forms",
+          "desc": "Domestic worker recruitment contracts (Bilateral & Triple)."
+        },
+        "safety": {
+          "title": "Occupational Safety Forms",
+          "desc": "Work injury records and serious accident reports."
+        },
+        "worldbank": {
+          "title": "World Bank Questionnaire",
+          "desc": "Forms and questionnaires for World Bank reports."
+        },
+        "workpermit": {
+          "title": "Issue Work Permit (E-Service)",
+          "desc": "As-hal E-Services Portal."
+        }
+      }
+    },
+    "moj": {
+      "title": "Ministry of Justice",
+      "services": {
+        "portal": {
+          "title": "e-Services Portal",
+          "desc": "Judicial inquiry, online payment, and notarization services."
+        },
+        "sak": {
+          "title": "Sak Services (Real Estate)",
+          "desc": "Comprehensive e-system for real estate transactions."
+        },
+        "notary": {
+          "title": "Digital Notary Public",
+          "desc": "Remote notarization of contracts and POAs."
+        },
+        "efiling": {
+          "title": "E-Filing of Cases",
+          "desc": "Registering and tracking lawsuits electronically."
+        },
+        "realestate": {
+          "title": "Real Estate Publicity",
+          "desc": "Automated notarization and real estate publicity services."
+        },
+        "caseinquiry": {
+          "title": "Case Inquiry",
+          "desc": "Tracking court rolls and judicial decisions."
+        },
+        "registration": {
+          "title": "Real Estate Registration",
+          "desc": "Real Estate Registration Department services."
+        }
+      }
+    },
+    "mol": {
+      "title": "Ministry of Labour",
+      "services": {
+        "directory": {
+          "title": "e-Services Directory",
+          "desc": "Comprehensive portal for individual, corporate, and recruitment services."
+        },
+        "auth": {
+          "title": "Digital Contract Authentication",
+          "desc": "System for digital authentication of labor contracts."
+        },
+        "expatriate": {
+          "title": "Expatriate Services",
+          "desc": "Permit issuance and renewal via LMRA."
+        },
+        "egyptian": {
+          "title": "Egyptian Labor Services",
+          "desc": "Job seeker registration, work certificates, and complaints."
+        },
+        "licensing": {
+          "title": "Licensing Services",
+          "desc": "Commercial and private work licenses and contract registration."
+        },
+        "permits": {
+          "title": "Work Permits",
+          "desc": "Work permit transactions for foreigners and pre-approvals."
+        }
+      }
+    },
+    "mohre": {
+      "title": "MOHRE",
+      "services": {
+        "permits": {
+          "title": "Work Permit Services",
+          "desc": "Issue, renew, and cancel work permits and job offers."
+        },
+        "contracts": {
+          "title": "Job Offers & Contracts",
+          "desc": "Access unified job offer templates."
+        }
+      }
+    },
+    "bh_portal": {
+      "title": "eGovernment Portal",
+      "services": {
+        "courts": {
+          "title": "Court and Cases Services",
+          "desc": "Case inquiry, fee payment, and travel ban check."
+        },
+        "sijilat": {
+          "title": "Commercial Registration (Sijilat)",
+          "desc": "Manage commercial registrations and business licenses."
+        }
+      }
+    },
+    "presidency": {
+      "title": "The Presidency",
+      "services": {
+        "news": {
+          "title": "Presidential News & Decrees",
+          "desc": "Official source for news, presidential statements, and national projects."
+        },
+        "projects": {
+          "title": "National Projects",
+          "desc": "Detailed info on major development projects."
+        }
+      }
+    },
+    "mjla": {
+      "title": "Ministry of Justice & Legal Affairs",
+      "services": {
+        "gazette": {
+          "title": "Official Gazette",
+          "desc": "Archive of official gazette and Omani legislations."
+        }
+      }
+    },
+    "lb_justice": {
+      "title": "Ministry of Justice",
+      "services": {
+        "commercial": {
+          "title": "Commercial Register",
+          "desc": "Access legal information of registered companies."
+        }
+      }
+    },
+    "iq_moj": {
+      "title": "Ministry of Justice",
+      "services": {
+        "registration": {
+          "title": "Real Estate Registration",
+          "desc": "Real Estate Registration Department services."
+        },
+        "gazette": {
+          "title": "Official Gazette",
+          "desc": "Publishing laws and official decrees."
+        }
+      }
+    },
+    "molsa": {
+      "title": "MOLSA",
+      "services": {
+        "loans": {
+          "title": "Loans & Employment",
+          "desc": "Employment support and soft loans services for job seekers."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "tab": "العقود",
+  "selectTemplate": "اختيار نموذج",
+  "create": "إنشاء مخصص",
+  "governingLaw": "القانون الحاكم (الاختصاص القضائي)",
+  "title": "إدارة العقود",
+  "subtitle": "إنشاء وإدارة العقود القانونية واتفاقيات العمل.",
+  "generatedVia": "تم الإنشاء آلياً",
+  "officialLegalDocument": "مستند قانوني رسمي",
+  "signatureLabels": {
+    "signature": "التوقيع",
+    "name": "الاسم",
+    "date": "التاريخ"
+  },
+  "searchPlaceholder": "البحث في العقود...",
+  "add": "إنشاء عقد جديد",
+  "generate": "توليد بالذكاء الاصطناعي",
+  "preview": "معاينة العقد",
+  "edit": "تعديل المسودة",
+  "delete": "حذف العقد",
+  "print": "طباعة العقد",
+  "download": "تحميل PDF",
+  "duplicate": "نسخ العقد",
+  "status": "حالة العقد",
+  "lastUpdated": "آخر تحديث",
+  "clientName": "اسم الطرف الثاني",
+  "items": "بنود العقد",
+  "details": "تفاصيل إضافية",
+  "variables": {
+    "title": "المتغيرات المطلوبة",
+    "desc": "قم بتعبئة البيانات التالية لتجهيز العقد."
+  },
+  "sections": {
+    "header": "الترويسة",
+    "parties": "الأطراف",
+    "articles": "البنود",
+    "signatures": "التوقيعات",
+    "additional": "شروط إضافية"
+  },
+  "templates": {
+    "common": {
+      "variables": {
+        "issueDate": "تاريخ الإصدار",
+        "startDate": "تاريخ البدء",
+        "endDate": "تاريخ الانتهاء",
+        "salary": "الراتب الشهري",
+        "jobTitle": "المسمى الوظيفي",
+        "probationPeriod": "فترة التجربة",
+        "noticePeriod": "فترة الإنذار",
+        "workingHours": "ساعات العمل",
+        "workLocation": "مقر العمل",
+        "currency": "العملة",
+        "amount": "المبلغ الإجمالي",
+        "description": "الوصف",
+        "notes": "ملاحظات",
+        "signature": "التوقيع",
+        "signatureDate": "تاريخ التوقيع",
+        "civilId": "الرقم المدني / البطاقة الوطنية",
+        "license": "رقم الترخيص",
+        "address": {
+          "label": "العنوان الكامل",
+          "country": "الدولة",
+          "block": "القطعة",
+          "street": "الشارع",
+          "building": "المبنى / القسيمة",
+          "floor": "الطابق",
+          "unit": "الوحدة"
+        },
+        "phone": {
+          "label": "رقم الهاتف",
+          "countryCode": "مفتاح الدولة",
+          "number": "الرقم"
+        },
+        "name": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "party": {
+          "employer": "اسم صاحب العمل",
+          "employee": "اسم الموظف",
+          "landlord": "اسم المؤجر",
+          "tenant": "اسم المستأجر",
+          "client": "اسم العميل",
+          "contractor": "اسم المقاول / المزود"
+        }
+      }
+    },
+    "employment-contract-v1": {
+      "name": "عقد عمل موحد",
+      "content": "تم تحرير هذا العقد في يوم {{issueDate}} بين كل من:\r\n\r\n1. {{employer.name}}، {{#if employer.partyType=='company'}}ويحمل ترخيص رقم {{employer.license}}{{/if}}{{#if employer.partyType=='individual'}}ويحمل بطاقة مدنية رقم {{employer.civilId}}{{/if}}، وعنوانه: {{employer.address.country}}، قطعة {{employer.address.block}}، شارع {{employer.address.street}}، مبنى {{employer.address.building}}، ورقم جواله {{employer.phone.countryCode}}-{{employer.phone.number}} (ويُشار إليه فيما بعد بـ \"صاحب العمل\").\r\n2. {{employee.name}}، ويحمل بطاقة مدنية رقم {{employee.civilId}}، وعنوانه: {{employee.address.country}}، قطعة {{employee.address.block}}، شارع {{employee.address.street}}، منزل {{employee.address.building}}، ورقم جواله {{employee.phone.countryCode}}-{{employee.phone.number}} (ويُشار إليه فيما بعد بـ \"الموظف\").\r\n\r\nبموجب هذا العقد، يوافق صاحب العمل على توظيف الموظف، ويوافق الموظف على العمل لدى صاحب العمل بالمسمى الوظيفي {{jobTitle}}، وذلك اعتبارًا من تاريخ {{startDate}}.\r\n\r\nالمادة (1): الواجبات والمسؤوليات\r\nيكون الموظف مسؤولاً عن أداء الواجبات والمسؤوليات التالية:\r\n{{serviceDescription}}\r\n\r\nالمادة (2): الراتب\r\nيوافق صاحب العمل على دفع راتب شهري للموظف قدره {{salary}}.\r\n\r\nالمادة (3): فترة التجربة\r\nيخضع الموظف لفترة تجربة مدتها {{probationPeriod}} أشهر تبدأ من تاريخ مباشرة العمل.\r\n\r\nالمادة (4): القانون الحاكم\r\nيخضع هذا العقد لقوانين العمل السارية في الدولة.\r\n\r\nوعليه، تم توقيع هذا العقد من قبل الطرفين.\r\n\r\nتوقيع صاحب العمل:\r\nالاسم: {{employer.name}}\r\nالتوقيع: {{employer.signature}}\r\nالتاريخ: {{employer.signatureDate}}\r\n\r\nتوقيع الموظف:\r\nالاسم: {{employee.name}}\r\nالتوقيع: {{employee.signature}}\r\nالتاريخ: {{employee.signatureDate}}"
+    },
+    "lease-agreement-v1": {
+      "name": "عقد إيجار",
+      "content": "تم إبرام عقد الإيجار هذا في يوم {{issueDate}} بين:\r\n\r\n1. المؤجر: {{landlord.name}}، ترخيص رقم {{landlord.license}}، وعنوانه: {{landlord.address.country}}، قطعة {{landlord.address.block}}، شارع {{landlord.address.street}}، مكتب {{landlord.address.building}}.\r\n2. المستأجر: {{tenant.name}}، وعنوانه: {{tenant.address.country}}، قطعة {{tenant.address.block}}، شارع {{tenant.address.street}}، منزل {{tenant.address.building}}.\r\n\r\nالمادة (1): العقار المؤجر\r\nيؤجر المؤجر للمستأجر العقار الكائن في: {{property.address.country}}، قطعة {{property.address.block}}، شارع {{property.address.street}}، مبنى {{property.address.building}}، وهو عبارة عن {{propertyDescription}}.\r\n\r\nالمادة (2): مدة الإيجار\r\nتبدأ مدة الإيجار من {{leaseStartDate}} وتنتهي في {{leaseEndDate}}.\r\n\r\nالمادة (3): الأجرة\r\nالأجرة الشهرية المتفق عليها هي {{rentAmount}}، وتستحق في {{rentDueDate}}.\r\n\r\nالمادة (4): التأمين\r\nدفع المستأجر للمؤجر مبلغ وقدره {{securityDeposit}} كتأمين، يُرد عند انتهاء العقد بعد التأكد من سلامة العقار.\r\n\r\nالمادة (5): القانون الحاكم\r\nيخضع هذا العقد للقوانين المعمول بها في الدولة.\r\n\r\nوعليه، تم توقيع هذا العقد من قبل الطرفين.\r\n\r\nتوقيع المؤجر:\r\nالاسم: {{landlord.name}}\r\nالتوقيع: {{landlord.signature}}\r\nالتاريخ: {{landlord.signatureDate}}\r\n\r\nتوقيع المستأجر:\r\nالاسم: {{tenant.name}}\r\nالتوقيع: {{tenant.signature}}\r\nالتاريخ: {{tenant.signatureDate}}"
+    },
+    "nda-v1": {
+      "name": "اتفاقية عدم إفصاح",
+      "content": "تم إبرام اتفاقية عدم الإفصاح هذه في يوم {{issueDate}} بين:\r\n\r\n1. {{disclosingParty.name}}، ترخيص رقم {{disclosingParty.license}}، وعنوانه: {{disclosingParty.address.country}}، قطعة {{disclosingParty.address.block}}، شارع {{disclosingParty.address.street}}، مكتب {{disclosingParty.address.building}} (يُشار إليه بـ \"الطرف المفصح\").\r\n2. {{receivingParty.name}}، ترخيص رقم {{receivingParty.license}}، وعنوانه: {{receivingParty.address.country}}، قطعة {{receivingParty.address.block}}، شارع {{receivingParty.address.street}}، مكتب {{receivingParty.address.building}} (يُشار إليه بـ \"الطرف المستقبل\").\r\n\r\nالمادة (1): المعلومات السرية\r\nتشمل \"المعلومات السرية\" ما يلي: {{confidentialInfoDescription}}.\r\n\r\nالمادة (2): الغرض\r\nيوافق الطرف المستقبل على استخدام المعلومات السرية فقط لغرض: {{purpose}}.\r\n\r\nالمادة (3): الالتزامات\r\nيتعهد الطرف المستقبل بالحفاظ على سرية المعلومات وعدم إفشائها لأي طرف ثالث.\r\n\r\nالمادة (4): مدة الاتفاقية\r\nتظل هذه الاتفاقية سارية المفعول لمدة {{termYears}} سنوات من تاريخه.\r\n\r\nالمادة (5): القانون الحاكم\r\nتخضع هذه الاتفاقية لـ {{jurisdiction}}.\r\n\r\nوعليه، تم توقيع هذه الاتفاقية من قبل الطرفين.\r\n\r\nتوقيع الطرف المفصح:\r\nالاسم: {{disclosingParty.name}}\r\nالتوقيع: {{disclosingParty.signature}}\r\nالتاريخ: {{disclosingParty.signatureDate}}\r\n\r\nتوقيع الطرف المستقبل:\r\nالاسم: {{receivingParty.name}}\r\nالتوقيع: {{receivingParty.signature}}\r\nالتاريخ: {{receivingParty.signatureDate}}"
+    },
+    "partnership-agreement-v1": {
+      "name": "اتفاقية شراكة",
+      "content": "تم إبرام عقد الشراكة هذا في {{issueDate}} لتأسيس شراكة باسم \"{{partnershipName}}\".\r\n\r\nالشركاء:\r\n1. {{partnerA.name}} (الشريك الأول)، وعنوانه: {{partnerA.address.country}}، قطعة {{partnerA.address.block}}، شارع {{partnerA.address.street}}، مكتب {{partnerA.address.building}}.\r\n2. {{partnerB.name}} (الشريك الثاني)، وعنوانه: {{partnerB.address.country}}، قطعة {{partnerB.address.block}}، شارع {{partnerB.address.street}}، مكتب {{partnerB.address.building}}.\r\n\r\nالمادة (1): غرض الشراكة\r\nالغرض من هذه الشراكة هو {{partnershipPurpose}}.\r\n\r\nالمادة (2): رأس المال والمساهمات\r\n- مساهمة الشريك الأول: {{partnerA.contribution}}.\r\n- مساهمة الشريك الثاني: {{partnerB.contribution}}.\r\n\r\nالمادة (3): توزيع الأرباح والخسائر\r\n- نسبة الشريك الأول: {{partnerA.profitShare}}%.\r\n- نسبة الشريك الثاني: {{partnerB.profitShare}}%.\r\n\r\nالمادة (4): مدة الشراكة\r\nمدة هذه الشراكة هي {{duration}}.\r\n\r\nالمادة (5): القانون الحاكم\r\nيخضع هذا العقد لـ {{jurisdiction}}.\r\n\r\nوعليه، تم توقيع هذا العقد من قبل الطرفين.\r\n\r\nتوقيع الشريك الأول:\r\nالاسم: {{partnerA.name}}\r\nالتوقيع: {{partnerA.signature}}\r\nالتاريخ: {{partnerA.signatureDate}}\r\n\r\nتوقيع الشريك الثاني:\r\nالاسم: {{partnerB.name}}\r\nالتوقيع: {{partnerB.signature}}\r\nالتاريخ: {{partnerB.signatureDate}}"
+    },
+    "service-agreement-v1": {
+      "name": "اتفاقية تقديم خدمات",
+      "content": "تم إبرام هذه الاتفاقية في يوم {{issueDate}} بين كل من:\r\n\r\n1. {{partyA.name}}، {{#if partyA.partyType=='company'}}ويحمل ترخيص رقم {{partyA.license}}{{/if}}{{#if partyA.partyType=='individual'}}ويحمل بطاقة مدنية رقم {{partyA.civilId}}{{/if}}، وعنوانه: {{partyA.address.country}}، قطعة {{partyA.address.block}}، شارع {{partyA.address.street}}، مكتب {{partyA.address.building}}، ورقم جواله {{partyA.phone.countryCode}}-{{partyA.phone.number}} (ويُشار إليه فيما بعد بـ \"الطرف الأول\").\r\n2. {{partyB.name}}، {{#if partyB.partyType=='company'}}ويحمل ترخيص رقم {{partyB.license}}{{/if}}{{#if partyB.partyType=='individual'}}ويحمل بطاقة مدنية رقم {{partyB.civilId}}{{/if}}، وعنوانه: {{partyB.address.country}}، قطعة {{partyB.address.block}}، شارع {{partyB.address.street}}، مكتب {{partyB.address.building}}، ورقم جواله {{partyB.phone.countryCode}}-{{partyB.phone.number}} (ويُشار إليه فيما بعد بـ \"الطرف الثاني\").\r\n\r\nتمهيد:\r\nحيث إن الطرف الأول يرغب في الحصول على خدمات متخصصة، وحيث إن الطرف الثاني لديه الخبرة والكفاءة لتقديم هذه الخدمات، فقد اتفق الطرفان وهما بكامل أهليتهما المعتبرة شرعاً ونظاماً على ما يلي:\r\n\r\nالمادة (1): موضوع العقد\r\nيوافق الطرف الثاني على تقديم خدمات {{serviceDescription}} لصالح الطرف الأول.\r\n\r\nالمادة (2): مدة العقد\r\nمدة هذه الاتفاقية تبدأ من تاريخ {{startDate}} وتنتهي في تاريخ {{endDate}}.\r\n\r\nالمادة (3): الأتعاب والدفع\r\nمقابل الخدمات المقدمة، يدفع الطرف الأول للطرف الثاني مبلغاً إجمالياً قدره {{amount}}، وذلك وفقاً لـ {{paymentSchedule}}.\r\n\r\nالمادة (4): القانون والاختصاص القضائي\r\nتخضع هذه الاتفاقية وتُفسر وفقاً لـ {{jurisdiction}}. وفي حال نشوء أي نزاع، تكون المحاكم المختصة في {{court}} هي صاحبة الاختصاص.\r\n\r\nالمادة (5): الإنهاء\r\nيحق لأي من الطرفين إنهاء هذه الاتفاقية بموجب إشعار خطي للطرف الآخر قبل {{noticeDays}} يوماً في حالة وجود إخلال جوهري ببنود الاتفاقية.\r\n\r\nوعليه، تم توقيع هذه الاتفاقية من قبل الطرفين.\r\n\r\nتوقيع الطرف الأول:\r\nالاسم: {{partyA.name}}\r\nالتوقيع: {{partyA.signature}}\r\nالتاريخ: {{partyA.signatureDate}}\r\n\r\nتوقيع الطرف الثاني:\r\nالاسم: {{partyB.name}}\r\nالتوقيع: {{partyB.signature}}\r\nالتاريخ: {{partyB.signatureDate}}"
+    },
+    "consulting-agreement-v1": {
+      "name": "Consulting Agreement",
+      "content": "أبرمت هذه الاتفاقية في {{issueDate}} بين {{client.name}} وعنوانه {{client.address.full}} (العميل)، و{{consultant.name}} وعنوانه {{consultant.address.full}} (المستشار). يوافق المستشار على تقديم الخدمات التالية: {{services}}. مدة هذه الاتفاقية هي {{term}}. مقابل الخدمات، يدفع العميل للمستشار {{compensation}}."
+    },
+    "independent-contractor-agreement-v1": {
+      "name": "Independent Contractor Agreement",
+      "content": "اتفاقية مبرمة في {{issueDate}} بين {{client.name}} (العميل) و {{contractor.name}} (المقاول). يلتزم المقاول بتقديم الخدمات التالية: {{services}}، بدءًا من {{startDate}} وحتى {{endDate}}. يدفع العميل للمقاول مبلغًا قدره {{paymentAmount}}."
+    },
+    "mou-v1": {
+      "name": "Mou",
+      "content": "مذكرة تفاهم بتاريخ {{issueDate}} بين {{partyA.name}} و {{partyB.name}}. اتفق الطرفان على التعاون لتحقيق الغرض التالي: {{purpose}}. تم تحديد المسؤوليات كما يلي: {{responsibilities}}. هذه المذكرة غير ملزمة قانونًا ولكنها تعبر عن نية الطرفين."
+    },
+    "privacy-policy-v1": {
+      "name": "Privacy Policy",
+      "content": "سياسة الخصوصية لـ {{companyName}}، سارية من {{effectiveDate}}. نحن نجمع البيانات التالية: {{dataCollected}}. نستخدم هذه البيانات من أجل: {{dataUsage}}. لأي استفسارات، يرجى التواصل عبر {{contactEmail}}."
+    },
+    "terms-of-service-v1": {
+      "name": "Terms Of Service",
+      "content": "شروط الخدمة لـ {{companyName}}، سارية من {{effectiveDate}}. باستخدام موقعنا، فإنك توافق على هذه الشروط. مسؤولياتك تشمل: {{userResponsibilities}}. حدود مسؤوليتنا هي كما يلي: {{limitationOfLiability}}. تخضع هذه الشروط لقوانين {{governingLaw}}."
+    },
+    "influencer-agreement-v1": {
+      "name": "Influencer Agreement",
+      "content": "اتفاقية بتاريخ {{issueDate}} بين {{brand.name}} (العلامة التجارية) و {{influencer.name}} (المؤثر). سيقوم المؤثر بالترويج للحملة التالية: {{campaignDescription}}. المخرجات المطلوبة هي: {{deliverables}}. المقابل المادي هو {{payment}}."
+    },
+    "photography-services-v1": {
+      "name": "Photography Services",
+      "content": "اتفاقية خدمات تصوير بتاريخ {{issueDate}} بين {{client.name}} (العميل) و {{photographer.name}} (المصور) لتغطية حدث بتاريخ {{eventDate}} في {{eventLocation}}. تشمل الخدمات: {{services}}. الأتعاب الإجمالية هي {{fee}}."
+    },
+    "bill-of-sale-v1": {
+      "name": "Bill Of Sale",
+      "content": "في تاريخ {{saleDate}}، أنا، {{seller.name}} (البائع)، استلمت مبلغ {{salePrice}} من {{buyer.name}} (المشتري) مقابل بيع السلعة التالية: {{itemDescription}}. يتم بيع السلعة \"كما هي\"."
+    },
+    "promissory-note-v1": {
+      "name": "Promissory Note",
+      "content": "بتاريخ {{issueDate}}، أنا، {{borrower.name}} (المُقترض)، أتعهد بدفع مبلغ {{principalAmount}} إلى {{lender.name}} (المُقرض) في أو قبل تاريخ {{dueDate}}، مع فائدة سنوية بنسبة {{interestRate}}%."
+    },
+    "equipment-rental-v1": {
+      "name": "Equipment Rental",
+      "content": "اتفاقية إيجار بتاريخ {{issueDate}} بين {{owner.name}} (المالك) و {{renter.name}} (المستأجر) لإيجار المعدات التالية: {{equipmentDescription}} لفترة {{rentalPeriod}} مقابل رسوم قدرها {{rentalFee}}."
+    },
+    "power-of-attorney-v1": {
+      "name": "Power Of Attorney",
+      "content": "أنا، {{principal.name}}، في تاريخ {{issueDate}}، أُعين بموجب هذا التوكيل {{agent.name}} ليكون وكيلي. أمنحه الصلاحيات التالية: {{powers}}. يسري هذا التوكيل اعتباراً من {{effectiveDate}}."
+    },
+    "photo-release-form-v1": {
+      "name": "Photo Release Form",
+      "content": "أنا، {{model.name}}، أمنح بموجبه {{photographer.name}} الإذن غير القابل للإلغاء لاستخدام صوري للأغراض التالية: {{permittedUse}}. تم التوقيع في {{releaseDate}}."
+    },
+    "subcontractor-agreement-v1": {
+      "name": "Subcontractor Agreement",
+      "content": "اتفاقية بتاريخ {{issueDate}} بين {{contractor.name}} (المقاول الرئيسي) و {{subcontractor.name}} (المقاول من الباطن) لمشروع: {{projectDescription}}. نطاق العمل هو: {{scopeOfWork}}. المقابل المادي هو {{compensation}}."
+    },
+    "sales-commission-v1": {
+      "name": "Sales Commission",
+      "content": "اتفاقية عمولة مبيعات بتاريخ {{issueDate}} بين {{company.name}} (الشركة) و {{salesperson.name}} (مندوب المبيعات). هيكل العمولة هو: {{commissionStructure}}. سيتم دفع العمولة وفقاً لـ: {{paymentSchedule}}."
+    },
+    "distribution-agreement-v1": {
+      "name": "Distribution Agreement",
+      "content": "اتفاقية توزيع بتاريخ {{issueDate}} بين {{supplier.name}} (المورد) و {{distributor.name}} (الموزع). يمنح المورد الموزع حقوق توزيع المنتجات التالية: {{products}} في المنطقة الجغرافية: {{territory}} لمدة {{term}}."
+    },
+    "franchise-agreement-v1": {
+      "name": "Franchise Agreement",
+      "content": "اتفاقية امتياز بتاريخ {{issueDate}} بين {{franchisor.name}} (مانح الامتياز) و {{franchisee.name}} (الحاصل على الامتياز) لتشغيل امتياز في {{location}}. رسوم الامتياز الأولية هي {{franchiseFee}} مع رسوم مستمرة قدرها {{royaltyFee}}. مدة الاتفاقية {{term}}."
+    },
+    "joint-venture-v1": {
+      "name": "Joint Venture",
+      "content": "اتفاقية مشروع مشترك بتاريخ {{issueDate}} بين {{partyA.name}} و {{partyB.name}} لتشكيل مشروع مشترك باسم {{jvName}}. الغرض من المشروع هو: {{purpose}}. مساهمات الأطراف هي: {{contributions}}. سيتم تقاسم الأرباح كما يلي: {{profitSharing}}."
+    },
+    "asset-purchase-v1": {
+      "name": "Asset Purchase",
+      "content": "اتفاقية شراء أصول بتاريخ {{issueDate}} بين {{seller.name}} (البائع) و {{buyer.name}} (المشتري). يوافق البائع على بيع والمشتري على شراء الأصول التالية: {{assets}} بسعر شراء قدره {{purchasePrice}}. تاريخ الإغلاق هو {{closingDate}}."
+    },
+    "shareholders-agreement-v1": {
+      "name": "Shareholders Agreement",
+      "content": "اتفاقية مساهمين بتاريخ {{issueDate}} لشركة {{companyName}}. المساهمون هم: {{shareholders}}. توزيع الأسهم هو: {{shareDistribution}}. تتم إدارة الشركة على النحو التالي: {{management}}."
+    },
+    "software-dev-v1": {
+      "name": "Software Dev",
+      "content": "اتفاقية تطوير برمجيات بتاريخ {{issueDate}} بين {{client.name}} (العميل) و {{developer.name}} (المطور). نطاق المشروع هو: {{projectScope}}. الجدول الزمني هو {{timeline}}. الدفع هو {{payment}}. ملكية الملكية الفكرية ستكون لـ {{ipOwnership}}."
+    },
+    "ip-assignment-v1": {
+      "name": "Ip Assignment",
+      "content": "اتفاقية تنازل بتاريخ {{issueDate}}. يتنازل {{assignor.name}} (المتنازل) إلى {{assignee.name}} (المتنازل له) عن جميع حقوقه في الملكية الفكرية التالية: {{ipDescription}}، مقابل {{consideration}}."
+    },
+    "commercial-lease-v1": {
+      "name": "Commercial Lease",
+      "content": "عقد إيجار تجاري بتاريخ {{issueDate}} بين {{landlord.name}} (المؤجر) و {{tenant.name}} (المستأجر) للعقار الواقع في {{propertyAddress}}. مدة الإيجار هي {{leaseTerm}} بإيجار قدره {{rentAmount}}. الاستخدام المسموح به هو {{permittedUse}}."
+    },
+    "property-management-v1": {
+      "name": "Property Management",
+      "content": "اتفاقية إدارة ممتلكات بتاريخ {{issueDate}} بين {{owner.name}} (المالك) و {{manager.name}} (المدير) للعقار في {{propertyAddress}}. سيقدم المدير الخدمات التالية: {{services}} مقابل رسوم إدارة قدرها {{managementFee}} لمدة {{term}}."
+    },
+    "construction-contract-v1": {
+      "name": "Construction Contract",
+      "content": "عقد إنشاءات بتاريخ {{issueDate}} بين {{owner.name}} (المالك) و {{contractor.name}} (المقاول). نطاق العمل في {{workLocation}} هو: {{scopeOfWork}}. سعر العقد هو {{contractPrice}} وتاريخ الانتهاء المتوقع هو {{completionDate}}."
+    },
+    "event-planning-v1": {
+      "name": "Event Planning",
+      "content": "اتفاقية تنظيم فعاليات بتاريخ {{issueDate}} بين {{client.name}} (العميل) و {{planner.name}} (المنظم) لفعالية \"{{eventName}}\" بتاريخ {{eventDate}}. الخدمات المقدمة هي: {{services}}. التكلفة الإجمالية هي {{totalCost}}."
+    },
+    "catering-services-v1": {
+      "name": "Catering Services",
+      "content": "اتفاقية تموين غذائي بتاريخ {{issueDate}} بين {{client.name}} (العميل) و {{caterer.name}} (المتعهد) لفعالية بتاريخ {{eventDate}} في {{eventLocation}} لـ {{numberOfGuests}} ضيف. قائمة الطعام هي: {{menu}}. السعر الإجمالي هو {{totalPrice}}."
+    },
+    "videography-services-v1": {
+      "name": "Videography Services",
+      "content": "اتفاقية خدمات تصوير فيديو بتاريخ {{issueDate}} بين {{client.name}} و {{videographer.name}} لـ {{eventDetails}}. نطاق العمل: {{scopeOfWork}}. الأتعاب: {{fee}}. تاريخ التسليم: {{deliveryDate}}."
+    },
+    "affiliate-agreement-v1": {
+      "name": "Affiliate Agreement",
+      "content": "اتفاقية تسويق بالعمولة بتاريخ {{issueDate}} بين {{company.name}} و {{affiliate.name}}. نسبة العمولة هي {{commissionRate}}. شروط الدفع هي {{paymentTerms}}."
+    },
+    "letter-of-intent-v1": {
+      "name": "Letter Of Intent",
+      "content": "بتاريخ {{issueDate}}، يقدم {{sender.name}} هذا الخطاب إلى {{recipient.name}} للتعبير عن النية بخصوص: {{subject}}. الشروط المقترحة هي: {{terms}}. {{nonBindingClause}}."
+    },
+    "cease-and-desist-v1": {
+      "name": "Cease And Desist",
+      "content": "بتاريخ {{issueDate}}، إلى {{recipient.name}}. نطالبكم بالكف فوراً عن النشاط التالي: {{infringingActivity}}. يجب عليكم {{demand}} قبل تاريخ {{deadline}} لتجنب الإجراءات القانونية. من {{sender.name}}."
+    }
+  }
+}

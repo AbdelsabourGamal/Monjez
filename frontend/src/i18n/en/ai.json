@@ -1,0 +1,14 @@
+{
+  "tab": "Qanoon AI",
+  "qanoonAi": "Qanoon AI",
+  "generate": "AI Generate",
+  "generating": "Analyzing brand and generating...",
+  "enterKeywords": "Enter keywords...",
+  "logoStyle": "Logo Style",
+  "styles": {
+    "Modern": "Modern",
+    "Luxury": "Luxury",
+    "Bold": "Bold",
+    "Abstract": "Abstract"
+  }
+}

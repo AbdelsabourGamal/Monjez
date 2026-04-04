@@ -1,0 +1,20 @@
+{
+  "filename": {
+    "quote": "عرض_سعر_{{id}}",
+    "invoice": "فاتورة_{{id}}",
+    "contract": "عقد_{{filename}}",
+    "document": "مستند_{{filename}}",
+    "pdf": "{{name}}.pdf",
+    "docx": "{{name}}.docx"
+  },
+  "errors": {
+    "pdfFailed": "فشل إنشاء ملف PDF. يرجى التحقق من القنصل لمزيد من التفاصيل.",
+    "fontFailed": "فشل تصدير ملف PDF. يرجى التحقق من اتصال الإنترنت لتحميل الخط العربي."
+  },
+  "invoice": {
+    "title": "فاتورة ضريبية"
+  },
+  "quote": {
+    "title": "عرض سعر"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Time Tracker",
+  "subtitle": "Track billable hours for projects and consulting.",
+  "start": "Start Timer",
+  "stop": "Stop & Save",
+  "projectDesc": "Task / Project Description",
+  "selectClient": "Select Client",
+  "rate": "Hourly Rate",
+  "timeLog": "Time Log",
+  "convert": "Convert to Invoice",
+  "duration": "Duration",
+  "total": "Total",
+  "delete": "Delete",
+  "noEntries": "No entries found.",
+  "running": "Running",
+  "enterDescription": "Please enter description",
+  "noBillable": "No billable entries",
+  "select": "Select...",
+  "billed": "Billed",
+  "unknownClient": "Unknown Client"
+}

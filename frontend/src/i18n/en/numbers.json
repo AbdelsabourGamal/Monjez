@@ -1,0 +1,26 @@
+{
+  "zero": "Zero",
+  "and": "and",
+  "only": "only.",
+  "onlyPrefix": "",
+  "hundred": "Hundred",
+  "units": ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"],
+  "teens": ["Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"],
+  "tens": ["", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"],
+  "billion": "Billion",
+  "million": "Million",
+  "thousand": "Thousand",
+  "currencies": {
+    "KWD": { "main": ["Kuwaiti Dinar", "Kuwaiti Dinars"], "sub": ["Fils", "Fils"], "fraction": 1000 },
+    "SAR": { "main": ["Saudi Riyal", "Saudi Riyals"], "sub": ["Halala", "Halalas"], "fraction": 100 },
+    "AED": { "main": ["UAE Dirham", "UAE Dirhams"], "sub": ["Fils", "Fils"], "fraction": 100 },
+    "USD": { "main": ["US Dollar", "US Dollars"], "sub": ["Cent", "Cents"], "fraction": 100 },
+    "EGP": { "main": ["Egyptian Pound", "Egyptian Pounds"], "sub": ["Piaster", "Piasters"], "fraction": 100 },
+    "QAR": { "main": ["Qatari Riyal", "Qatari Riyals"], "sub": ["Dirham", "Dirhams"], "fraction": 100 },
+    "BHD": { "main": ["Bahraini Dinar", "Bahraini Dinars"], "sub": ["Fils", "Fils"], "fraction": 1000 },
+    "OMR": { "main": ["Omani Rial", "Omani Rials"], "sub": ["Baisa", "Baisas"], "fraction": 1000 },
+    "JOD": { "main": ["Jordanian Dinar", "Jordanian Dinars"], "sub": ["Fils", "Fils"], "fraction": 1000 },
+    "EUR": { "main": ["Euro", "Euros"], "sub": ["Cent", "Cents"], "fraction": 100 },
+    "GBP": { "main": ["British Pound", "British Pounds"], "sub": ["Penny", "Pence"], "fraction": 100 }
+  }
+}

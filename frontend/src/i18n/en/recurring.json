@@ -1,0 +1,19 @@
+{
+  "tab": "Recurring",
+  "title": "Recurring Invoices",
+  "subtitle": "Manage subscriptions and monthly/yearly maintenance contracts.",
+  "nextDue": "Next Due",
+  "lastGen": "Last Generated",
+  "freq": "Frequency",
+  "monthly": "Monthly",
+  "yearly": "Yearly",
+  "quarterly": "Quarterly",
+  "generateNow": "Generate Invoice",
+  "active": "Active",
+  "inactive": "Inactive",
+  "noProfiles": "No recurring profiles found.",
+  "addDesc": "To add a recurring invoice, create a standard invoice and select 'Save as Recurring' (Feature coming soon).",
+  "overdue": "Overdue",
+  "confirmDelete": "Are you sure you want to delete this recurring profile?",
+  "invoiceGenerated": "Invoice generated successfully"
+}

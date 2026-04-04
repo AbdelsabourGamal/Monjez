@@ -1,0 +1,17 @@
+{
+  "title": "Client Portal",
+  "welcome": "Hello, {{clientName}}",
+  "reviewMsg": "Please review the quote below and approve.",
+  "total": "Grand Total",
+  "approve": "Approve & Sign",
+  "reject": "Reject Quote",
+  "download": "Download PDF",
+  "poweredBy": "Powered by MashhorQuote",
+  "signTitle": "E-Signature",
+  "confirmSign": "Confirm Signature",
+  "cancel": "Cancel",
+  "items": "Items",
+  "secure": "This is a secure link",
+  "qty": "Qty",
+  "price": "Price"
+}

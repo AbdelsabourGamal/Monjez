@@ -1,0 +1,31 @@
+{
+  "tab": "Bank Compliance",
+  "title": "Bank Compliance & Financing Prep",
+  "subtitle": "AI-powered document check for bank acceptance and financing readiness.",
+  "uploadBox": "Drag & drop company files (Trade License, Financials, IDs) here",
+  "checkBtn": "Check Compliance & Risks",
+  "checking": "Analyzing documents against Central Bank regulations...",
+  "score": "Compliance Score",
+  "issues": "Identified Risks & Issues",
+  "missing": "Missing Required Documents",
+  "recommendations": "Recommendations",
+  "creditPrep": "Credit File Preparation",
+  "creditDesc": "Checklist for common financing requirements",
+  "checklist": [
+    "Audited Financials (Last 3 Years)",
+    "6-Month Bank Statement",
+    "Active Project Contracts",
+    "Salary Certificate (Signatories)",
+    "Feasibility Study (New Projects)"
+  ],
+  "downloadReport": "Download Credit File PDF",
+  "uploaded": "Uploaded Files",
+  "delete": "Delete",
+  "reportTitle": "Credit Readiness Report",
+  "date": "Date",
+  "uploadTypes": "PDF, JPG, PNG (Max 10MB)",
+  "noIssues": "None identified.",
+  "noMissing": "None missing.",
+  "fileName": "Credit_File_Report.pdf"
+}
+

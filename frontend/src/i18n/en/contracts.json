@@ -1,0 +1,239 @@
+{
+  "tab": "Contracts",
+  "selectTemplate": "Select Template",
+  "create": "Create Custom",
+  "governingLaw": "Governing Law (Jurisdiction)",
+  "generatedVia": "Generated automatically",
+  "officialLegalDocument": "Official Legal Document",
+  "signatureLabels": {
+    "signature": "Signature",
+    "name": "Name",
+    "date": "Date"
+  },
+  "addFromDb": "Quick add from client database",
+  "selectOption": "Select an option",
+  "partyTypeLabel": "Party Type",
+  "company": "Company / Entity",
+  "individual": "Individual",
+  "details": "Contract Details",
+  "contractTitle": "Contract Title",
+  "customArticles": "Custom Articles",
+  "articleTitle": "Article Title",
+  "articleContent": "Article Content",
+  "addArticle": "Add New Article",
+  "deleteArticle": "Delete Article",
+  "signatures": "Signatures",
+  "partyA": "Party A",
+  "partyB": "Party B",
+  "employer": "Employer",
+  "employee": "Employee",
+  "client": "Client",
+  "contractor": "Contractor",
+  "landlord": "Landlord",
+  "tenant": "Tenant",
+  "selectLinkedId": "Select Linked Civil ID",
+  "selectIdFor": "Select the relevant ID for {{name}}:",
+  "skipSelection": "Continue without selecting ID",
+  "groups": {
+    "details": "Contract Details",
+    "partyA": "Party A Details",
+    "partyB": "Party B Details",
+    "employer": "Employer Details",
+    "employee": "Employee Details",
+    "client": "Client Details",
+    "contractor": "Contractor Details",
+    "landlord": "Landlord Details",
+    "tenant": "Tenant Details",
+    "financial": "Financial & Payment Terms",
+    "scope": "Project Scope & Deliverables",
+    "dates": "Important Dates",
+    "additional": "Additional Terms"
+  },
+  "templates": {
+    "common": {
+      "variables": {
+        "issueDate": "Issue Date",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "salary": "Monthly Salary",
+        "jobTitle": "Job Title",
+        "probationPeriod": "Probation Period",
+        "noticePeriod": "Notice Period",
+        "workingHours": "Working Hours",
+        "workLocation": "Work Location",
+        "currency": "Currency",
+        "amount": "Total Amount",
+        "description": "Description",
+        "notes": "Notes",
+        "signature": "Signature",
+        "signatureDate": "Signature Date",
+        "civilId": "Civil ID / National ID",
+        "license": "License Number",
+        "address": {
+          "label": "Full Address",
+          "country": "Country",
+          "block": "Block",
+          "street": "Street",
+          "building": "Building",
+          "floor": "Floor",
+          "unit": "Unit"
+        },
+        "phone": {
+          "label": "Phone Number",
+          "countryCode": "Country Code",
+          "number": "Number"
+        },
+        "name": "Full Name",
+        "email": "Email Address",
+        "party": {
+          "employer": "Employer Name",
+          "employee": "Employee Name",
+          "landlord": "Landlord Name",
+          "tenant": "Tenant Name",
+          "client": "Client Name",
+          "contractor": "Contractor Name"
+        }
+      }
+    },
+    "employment-contract-v1": {
+      "name": "Employment Contract",
+      "content": "This Employment Contract is entered into as of {{issueDate}} by and between:\r\n\r\n1. {{employer.name}}, {{#if employer.partyType=='company'}}holding license no. {{employer.license}}{{/if}}{{#if employer.partyType=='individual'}}holding Civil ID No. {{employer.civilId}}{{/if}}, with address at: {{employer.address.building}}, {{employer.address.street}}, Block {{employer.address.block}}, {{employer.address.country}}, phone number {{employer.phone.countryCode}}-{{employer.phone.number}} (hereinafter referred to as the \"Employer\").\r\n2. {{employee.name}}, holding Civil ID No. {{employee.civilId}}, with address at: {{employee.address.building}}, {{employee.address.street}}, Block {{employee.address.block}}, {{employee.address.country}}, phone number {{employee.phone.countryCode}}-{{employee.phone.number}} (hereinafter referred to as the \"Employee\").\r\n\r\nThe Employer agrees to employ the Employee, and the Employee agrees to work for the Employer in the position of {{jobTitle}}, commencing on {{startDate}}.\r\n\r\nARTICLE (1): DUTIES AND RESPONSIBILITIES\r\nThe Employee shall be responsible for performing the following duties and responsibilities:\r\n{{serviceDescription}}\r\n\r\nARTICLE (2): SALARY\r\nThe Employer agrees to pay the Employee a monthly salary of {{salary}}.\r\n\r\nARTICLE (3): PROBATION PERIOD\r\nThe Employee will be subject to a probation period of {{probationPeriod}} months, starting from the commencement date.\r\n\r\nARTICLE (4): GOVERNING LAW\r\nThis contract shall be governed by the applicable labor laws of the state.\r\n\r\nIN WITNESS WHEREOF, the parties have executed this Contract.\r\n\r\nEmployer Signature:\r\nName: {{employer.name}}\r\nSignature: {{employer.signature}}\r\nDate: {{employer.signatureDate}}\r\n\r\nEmployee Signature:\r\nName: {{employee.name}}\r\nSignature: {{employee.signature}}\r\nDate: {{employee.signatureDate}}"
+    },
+    "lease-agreement-v1": {
+      "name": "Lease Agreement",
+      "content": "This Lease Agreement is made on {{issueDate}} between:\r\n\r\n1. The Landlord: {{landlord.name}}, License No. {{landlord.license}}, with an address at: {{landlord.address.building}}, {{landlord.address.street}}, Block {{landlord.address.block}}, {{landlord.address.country}}.\r\n2. The Tenant: {{tenant.name}}, with an address at: {{tenant.address.building}}, {{tenant.address.street}}, Block {{tenant.address.block}}, {{tenant.address.country}}.\r\n\r\nARTICLE (1): THE PREMISES\r\nThe Landlord agrees to lease to the Tenant the property located at: {{property.address.building}}, {{property.address.street}}, Block {{property.address.block}}, {{property.address.country}}, described as {{propertyDescription}}.\r\n\r\nARTICLE (2): TERM\r\nThe term of this lease shall begin on {{leaseStartDate}} and end on {{leaseEndDate}}.\r\n\r\nARTICLE (3): RENT\r\nThe monthly rent shall be {{rentAmount}}, due on {{rentDueDate}}.\r\n\r\nARTICLE (4): SECURITY DEPOSIT\r\nThe Tenant has paid a security deposit of {{securityDeposit}}, which will be returned at the end of the lease term, subject to the condition of the property.\r\n\r\nARTICLE (5): GOVERNING LAW\r\nThis Agreement shall be governed by the applicable laws of the state.\r\n\r\nIN WITNESS WHEREOF, the parties have executed this Agreement.\r\n\r\nLandlord Signature:\r\nName: {{landlord.name}}\r\nSignature: {{landlord.signature}}\r\nDate: {{landlord.signatureDate}}\r\n\r\nTenant Signature:\r\nName: {{tenant.name}}\r\nSignature: {\r\n      {tenant.signature}}\r\nDate: {\r\n      {tenant.signatureDate}}"
+    },
+    "nda-v1": {
+      "name": "Non-Disclosure Agreement",
+      "content": "This Non-Disclosure Agreement is made on {{issueDate}} between:\r\n\r\n1. {{disclosingParty.name}}, License No. {{disclosingParty.license}}, with an address at: {{disclosingParty.address.building}}, {{disclosingParty.address.street}}, Block {{disclosingParty.address.block}}, {{disclosingParty.address.country}} (the \"Disclosing Party\").\r\n2. {{receivingParty.name}}, License No. {{receivingParty.license}}, with an address at: {{receivingParty.address.building}}, {{receivingParty.address.street}}, Block {{receivingParty.address.block}}, {{receivingParty.address.country}} (the \"Receiving Party\").\r\n\r\nARTICLE (1): CONFIDENTIAL INFORMATION\r\n\"Confidential Information\" shall include: {{confidentialInfoDescription}}.\r\n\r\nARTICLE (2): PURPOSE\r\nThe Receiving Party agrees to use the Confidential Information solely for the purpose of: {{purpose}}.\r\n\r\nARTICLE (3): OBLIGATIONS\r\nThe Receiving Party shall hold and maintain the Confidential Information in strict confidence.\r\n\r\nARTICLE (4): TERM\r\nThis Agreement shall remain in effect for a period of {{termYears}} years from the effective date.\r\n\r\nARTICLE (5): GOVERNING LAW\r\nThis Agreement shall be governed by {{jurisdiction}}.\r\n\r\nIN WITNESS WHEREOF, the parties have executed this Agreement.\r\n\r\nDisclosing Party Signature:\r\nName: {{disclosingParty.name}}\r\nSignature: {{disclosingParty.signature}}\r\nDate: {{disclosingParty.signatureDate}}\r\n\r\nReceiving Party Signature:\r\nName: {{receivingParty.name}}\r\nSignature: {{receivingParty.signature}}\r\nDate: {{receivingParty.signatureDate}}"
+    },
+    "partnership-agreement-v1": {
+      "name": "Partnership Agreement",
+      "content": "This Partnership Agreement is entered into on {{issueDate}} to form a partnership known as \"{{partnershipName}}\".\r\n\r\nTHE PARTNERS:\r\n1. {{partnerA.name}} (Partner A), with an address at: {{partnerA.address.building}}, {{partnerA.address.street}}, Block {{partnerA.address.block}}, {{partnerA.address.country}}.\r\n2. {{partnerB.name}} (Partner B), with an address at: {{partnerB.address.building}}, {{partnerB.address.street}}, Block {{partnerB.address.block}}, {{partnerB.address.country}}.\r\n\r\nARTICLE (1): PURPOSE OF PARTNERSHIP\r\nThe purpose of this partnership is {{partnershipPurpose}}.\r\n\r\nARTICLE (2): CAPITAL CONTRIBUTIONS\r\n- Partner A shall contribute: {{partnerA.contribution}}.\r\n- Partner B shall contribute: {{partnerB.contribution}}.\r\n\r\nARTICLE (3): PROFITS AND LOSSES\r\n- Partner A's share: {{partnerA.profitShare}}%.\r\n- Partner B's share: {{partnerB.profitShare}}%.\r\n\r\nARTICLE (4): DURATION\r\nThe duration of this partnership shall be {{duration}}.\r\n\r\nARTICLE (5): GOVERNING LAW\r\nThis Agreement shall be governed by {{jurisdiction}}.\r\n\r\nIN WITNESS WHEREOF, the parties have executed this Agreement.\r\n\r\nPartner A Signature:\r\nName: {{partnerA.name}}\r\nSignature: {{partnerA.signature}}\r\nDate: {{partnerA.signatureDate}}\r\n\r\nPartner B Signature:\r\nName: {{partnerB.name}}\r\nSignature: {{partnerB.signature}}\r\nDate: {{partnerB.signatureDate}}"
+    },
+    "service-agreement-v1": {
+      "name": "Service Agreement",
+      "content": "This Service Agreement is made and entered into as of {{issueDate}} by and between:\r\n\r\n1. {{partyA.name}}, {{#if partyA.partyType=='company'}}holding License No. {{partyA.license}}{{/if}}{{#if partyA.partyType=='individual'}}holding Civil ID No. {{partyA.civilId}}{{/if}}, residing at: {{partyA.address.building}}, {{partyA.address.street}}, Block {{partyA.address.block}}, {{partyA.address.country}}, phone number {{partyA.phone.countryCode}}-{{partyA.phone.number}} (hereinafter referred to as \"Party A\").\r\n2. {{partyB.name}}, {{#if partyB.partyType=='company'}}holding License No. {{partyB.license}}{{/if}}{{#if partyB.partyType=='individual'}}holding Civil ID No. {{partyB.civilId}}{{/if}}, residing at: {{partyB.address.building}}, {{partyB.address.street}}, Block {{partyB.address.block}}, {{partyB.address.country}}, phone number {{partyB.phone.countryCode}}-{{partyB.phone.number}} (hereinafter referred to as \"Party B\").\r\n\r\nRECITALS:\r\nWHEREAS, Party A desires to retain the services of Party B, and WHEREAS, Party B has the necessary expertise and qualifications to provide such services, the parties agree as follows:\r\n\r\nARTICLE (1): SCOPE OF SERVICES\r\nParty B agrees to provide the following services to Party A: {{serviceDescription}}.\r\n\r\nARTICLE (2): TERM\r\nThis Agreement shall commence on {{startDate}} and shall terminate on {{endDate}}.\r\n\r\nARTICLE (3): COMPENSATION\r\nIn consideration for the services rendered, Party A shall pay Party B a total fee of {{amount}}, payable as follows: {{paymentSchedule}}.\r\n\r\nARTICLE (4): GOVERNING LAW AND JURISDICTION\r\nThis Agreement shall be governed by and construed in accordance with the laws of {{jurisdiction}}. Any disputes arising hereunder shall be subject to the exclusive jurisdiction of the courts of {{court}}.\r\n\r\nARTICLE (5): TERMINATION\r\nEither party may terminate this Agreement upon {{noticeDays}} days' written notice to the other party in the event of a material breach of any of its provisions.\r\n\r\nIN WITNESS WHEREOF, the parties have executed this Agreement.\r\n\r\nParty A Signature:\r\nName: {{partyA.name}}\r\nSignature: {{partyA.signature}}\r\nDate: {{partyA.signatureDate}}\r\n\r\nParty B Signature:\r\nName: {{partyB.name}}\r\nSignature: {{partyB.signature}}\r\nDate: {{partyB.signatureDate}}"
+    },
+    "consulting-agreement-v1": {
+      "name": "Consulting Agreement",
+      "content": "This Agreement is made on {{issueDate}} between {{client.name}} of {{client.address.full}} (the \"Client\"), and {{consultant.name}} of {{consultant.address.full}} (the \"Consultant\"). The Consultant agrees to provide the following services: {{services}}. The term of this Agreement is {{term}}. In consideration, the Client shall pay the Consultant {{compensation}}."
+    },
+    "independent-contractor-agreement-v1": {
+      "name": "Independent Contractor Agreement",
+      "content": "Agreement made on {{issueDate}} between {{client.name}} (Client) and {{contractor.name}} (Contractor). Contractor will provide the following services: {{services}}, from {{startDate}} to {{endDate}}. Client will pay Contractor the sum of {{paymentAmount}}."
+    },
+    "mou-v1": {
+      "name": "Memorandum of Understanding",
+      "content": "This Memorandum of Understanding is entered into on {{issueDate}} between {{partyA.name}} and {{partyB.name}}. The parties agree to cooperate for the following purpose: {{purpose}}. Responsibilities are outlined as: {{responsibilities}}. This MOU is non-binding but expresses the mutual intent of the parties."
+    },
+    "privacy-policy-v1": {
+      "name": "Website Privacy Policy",
+      "content": "Privacy Policy for {{companyName}}, effective {{effectiveDate}}. We collect the following data: {{dataCollected}}. We use this data to: {{dataUsage}}. For any inquiries, please contact {{contactEmail}}."
+    },
+    "terms-of-service-v1": {
+      "name": "Website Terms of Service",
+      "content": "Terms of Service for {{companyName}}, effective {{effectiveDate}}. By using our site, you agree to these terms. Your responsibilities include: {{userResponsibilities}}. Our limitation of liability is as follows: {{limitationOfLiability}}. These terms are governed by the laws of {{governingLaw}}."
+    },
+    "influencer-agreement-v1": {
+      "name": "Influencer Agreement",
+      "content": "Agreement dated {{issueDate}} between {{brand.name}} (Brand) and {{influencer.name}} (Influencer). Influencer will promote the following campaign: {{campaignDescription}}. The deliverables are: {{deliverables}}. The payment will be {{payment}}."
+    },
+    "photography-services-v1": {
+      "name": "Photography Services Agreement",
+      "content": "Photography Services Agreement dated {{issueDate}} between {{client.name}} (Client) and {{photographer.name}} (Photographer) for an event on {{eventDate}} at {{eventLocation}}. Services include: {{services}}. The total fee is {{fee}}."
+    },
+    "bill-of-sale-v1": {
+      "name": "Bill of Sale",
+      "content": "On this date, {{saleDate}}, I, {{seller.name}} (Seller), have received the sum of {{salePrice}} from {{buyer.name}} (Buyer) for the sale of the following item: {{itemDescription}}. The item is sold \"as is\"."
+    },
+    "promissory-note-v1": {
+      "name": "Promissory Note",
+      "content": "On {{issueDate}}, I, {{borrower.name}} (Borrower), promise to pay to the order of {{lender.name}} (Lender) the principal sum of {{principalAmount}} on or before {{dueDate}}, with an annual interest rate of {{interestRate}}%."
+    },
+    "equipment-rental-v1": {
+      "name": "Equipment Rental Agreement",
+      "content": "Rental agreement dated {{issueDate}} between {{owner.name}} (Owner) and {{renter.name}} (Renter) for the rental of the following equipment: {{equipmentDescription}} for the period of {{rentalPeriod}} for a fee of {{rentalFee}}."
+    },
+    "power-of-attorney-v1": {
+      "name": "General Power of Attorney",
+      "content": "I, {{principal.name}}, on this date {{issueDate}}, hereby appoint {{agent.name}} as my agent (attorney-in-fact). I grant my agent the following powers: {{powers}}. This power of attorney is effective from {{effectiveDate}}."
+    },
+    "photo-release-form-v1": {
+      "name": "Photo Release Form",
+      "content": "I, {{model.name}}, hereby grant {{photographer.name}} irrevocable permission to use my likeness in photographs for the following purposes: {{permittedUse}}. Signed on {{releaseDate}}."
+    },
+    "subcontractor-agreement-v1": {
+      "name": "Subcontractor Agreement",
+      "content": "Agreement dated {{issueDate}} between {{contractor.name}} (Main Contractor) and {{subcontractor.name}} (Subcontractor) for the project: {{projectDescription}}. The scope of work is: {{scopeOfWork}}. Compensation shall be {{compensation}}."
+    },
+    "sales-commission-v1": {
+      "name": "Sales Commission Agreement",
+      "content": "Sales Commission Agreement dated {{issueDate}} between {{company.name}} (Company) and {{salesperson.name}} (Salesperson). The commission structure is as follows: {{commissionStructure}}. Payments will be made on a {{paymentSchedule}} basis."
+    },
+    "distribution-agreement-v1": {
+      "name": "Distribution Agreement",
+      "content": "Distribution Agreement dated {{issueDate}} between {{supplier.name}} (Supplier) and {{distributor.name}} (Distributor). Supplier grants Distributor the right to distribute the following products: {{products}} in the territory of {{territory}} for a term of {{term}}."
+    },
+    "franchise-agreement-v1": {
+      "name": "Franchise Agreement",
+      "content": "Franchise Agreement dated {{issueDate}} between {{franchisor.name}} (Franchisor) and {{franchisee.name}} (Franchisee) to operate a franchise at {{location}}. The initial franchise fee is {{franchiseFee}} with an ongoing royalty of {{royaltyFee}}. The term of this agreement is {{term}}."
+    },
+    "joint-venture-v1": {
+      "name": "Joint Venture Agreement",
+      "content": "Joint Venture Agreement dated {{issueDate}} between {{partyA.name}} and {{partyB.name}} to form a joint venture known as {{jvName}}. The purpose is: {{purpose}}. Contributions are: {{contributions}}. Profits will be shared as follows: {{profitSharing}}."
+    },
+    "asset-purchase-v1": {
+      "name": "Asset Purchase Agreement",
+      "content": "Asset Purchase Agreement dated {{issueDate}} between {{seller.name}} (Seller) and {{buyer.name}} (Buyer). Seller agrees to sell and Buyer agrees to purchase the following assets: {{assets}} for the purchase price of {{purchasePrice}}. The closing date shall be {{closingDate}}."
+    },
+    "shareholders-agreement-v1": {
+      "name": "Shareholders Agreement",
+      "content": "Shareholders Agreement dated {{issueDate}} for {{companyName}}. The shareholders are: {{shareholders}}. The share distribution is: {{shareDistribution}}. Management of the company shall be as follows: {{management}}."
+    },
+    "software-dev-v1": {
+      "name": "Software Development Agreement",
+      "content": "Software Development Agreement dated {{issueDate}} between {{client.name}} (Client) and {{developer.name}} (Developer). The project scope is: {{projectScope}}. The timeline is {{timeline}}. Payment shall be {{payment}}. Intellectual Property ownership will belong to {{ipOwnership}}."
+    },
+    "ip-assignment-v1": {
+      "name": "IP Assignment Agreement",
+      "content": "Assignment Agreement dated {{issueDate}}. {{assignor.name}} (Assignor) hereby assigns to {{assignee.name}} (Assignee) all rights, title, and interest in the following intellectual property: {{ipDescription}}, for the consideration of {{consideration}}."
+    },
+    "commercial-lease-v1": {
+      "name": "Commercial Lease Agreement",
+      "content": "Commercial Lease Agreement dated {{issueDate}} between {{landlord.name}} (Landlord) and {{tenant.name}} (Tenant) for the property at {{propertyAddress}}. The term is {{leaseTerm}} with rent of {{rentAmount}}. The permitted use is {{permittedUse}}."
+    },
+    "property-management-v1": {
+      "name": "Property Management Agreement",
+      "content": "Property Management Agreement dated {{issueDate}} between {{owner.name}} (Owner) and {{manager.name}} (Manager) for the property at {{propertyAddress}}. Manager will provide services: {{services}} for a fee of {{managementFee}} for a term of {{term}}."
+    },
+    "construction-contract-v1": {
+      "name": "Construction Contract",
+      "content": "Construction Contract dated {{issueDate}} between {{owner.name}} (Owner) and {{contractor.name}} (Contractor). The scope of work at {{workLocation}} is: {{scopeOfWork}}. The contract price is {{contractPrice}} and the expected completion date is {{completionDate}}."
+    },
+    "event-planning-v1": {
+      "name": "Event Planning Agreement",
+      "content": "Event Planning Agreement dated {{issueDate}} between {{client.name}} (Client) and {{planner.name}} (Planner) for the event \"{{eventName}}\" on {{eventDate}}. Services provided are: {{services}}. The total cost is {{totalCost}}."
+    },
+    "catering-services-v1": {
+      "name": "Catering Services Agreement",
+      "content": "Catering Agreement dated {{issueDate}} between {{client.name}} (Client) and {{caterer.name}} (Caterer) for an event on {{eventDate}} at {{eventLocation}} for {{numberOfGuests}} guests. The menu is: {{menu}}. The total price is {{totalPrice}}."
+    },
+    "videography-services-v1": {
+      "name": "Videography Services Agreement",
+      "content": "Videography Services Agreement dated {{issueDate}} between {{client.name}} and {{videographer.name}} for {{eventDetails}}. Scope of Work: {{scopeOfWork}}. Fee: {{fee}}. Delivery Date: {{deliveryDate}}."
+    },
+    "affiliate-agreement-v1": {
+      "name": "Affiliate Agreement",
+      "content": "Affiliate Agreement dated {{issueDate}} between {{company.name}} and {{affiliate.name}}. The commission rate shall be {{commissionRate}}. Payment terms are {{paymentTerms}}."
+    },
+    "letter-of-intent-v1": {
+      "name": "Letter of Intent",
+      "content": "Dated {{issueDate}}, {{sender.name}} submits this letter to {{recipient.name}} to express intent regarding: {{subject}}. The proposed terms are: {{terms}}. {{nonBindingClause}}."
+    },
+    "cease-and-desist-v1": {
+      "name": "Cease and Desist Letter",
+      "content": "Dated {{issueDate}}, To {{recipient.name}}. We hereby demand that you cease and desist from the following activity: {{infringingActivity}}. You must {{demand}} by {{deadline}} to avoid legal action. From {{sender.name}}."
+    }
+  }
+}

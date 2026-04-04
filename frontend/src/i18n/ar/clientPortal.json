@@ -1,0 +1,17 @@
+{
+  "title": "بوابة العميل",
+  "welcome": "مرحباً، {{clientName}}",
+  "reviewMsg": "يرجى مراجعة العرض أدناه والموافقة عليه.",
+  "total": "الإجمالي النهائي",
+  "approve": "موافقة وتوقيع",
+  "reject": "رفض العرض",
+  "download": "تحميل PDF",
+  "poweredBy": "مشغل بواسطة MashhorQuote",
+  "signTitle": "التوقيع الإلكتروني",
+  "confirmSign": "تأكيد التوقيع",
+  "cancel": "إلغاء",
+  "items": "البنود",
+  "secure": "هذا رابط آمن ومحمي",
+  "qty": "العدد",
+  "price": "السعر"
+}

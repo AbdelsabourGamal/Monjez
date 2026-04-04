@@ -1,0 +1,36 @@
+{
+  "tab": "Dashboard",
+  "title": "Dashboard",
+  "history": "History",
+  "welcome": "Welcome back,",
+  "activeNow": "Active Now",
+  "activeSince": "Active since {{time}}",
+  "quickActions": "Quick Actions",
+  "monthlyRevenue": "Monthly Revenue (KWD)",
+  "statusRatio": "Status Distribution",
+  "recentActivity": "Recent Activity",
+  "searchPlaceholder": "Search by title or client name...",
+  "marketing": {
+    "contracts": {
+      "title": "Smart Legal Contracts",
+      "desc": "Create bulletproof contracts with AI-powered clause generation.",
+      "cta": "Build Contract"
+    },
+    "quotes": {
+      "title": "Professional Quotes",
+      "desc": "Impress clients with stunning, high-conversion price proposals.",
+      "cta": "Create Quote"
+    },
+    "compliance": {
+      "title": "Bank Compliance",
+      "desc": "Verify identities and stay compliant with central bank regulations.",
+      "cta": "Verify Now"
+    }
+  },
+  "services": {
+    "quoteDesc": "Price quotes & proposals",
+    "contractDesc": "Legal & service agreements",
+    "docDesc": "Official letters & forms",
+    "clientsDesc": "Manage client directory"
+  }
+}

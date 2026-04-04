@@ -1,0 +1,283 @@
+{
+  "tab": "Documents",
+  "selectTemplate": "Select Template",
+  "create": "Create Custom",
+  "documentDetails": "Document Details",
+  "documentTitle": "Document Title",
+  "generatedVia": "Generated automatically",
+  "officialLegalDocument": "Official Legal Document",
+  "signatureLabels": {
+    "signature": "Signature",
+    "name": "Name",
+    "date": "Date"
+  },
+  "amountInWords": "Amount in Words",
+  "customSections": "Custom Sections",
+  "sectionTitle": "Section Title",
+  "sectionContent": "Section Content",
+  "addSection": "Add New Section",
+  "deleteSection": "Delete Section",
+  "templates": {
+    "legal-notice-v1": {
+      "name": "Legal Notice (Debt Claim)",
+      "content": "Dear Sir/Madam,\n\nSubject: Formal Legal Notice for Debt Claim: {{amount}} {{currency}}\n\nOn behalf of our client {{partyB.name}}, we hereby formally notify you to settle the outstanding amount of {{amount}} {{currency}} no later than {{dueDate}}.\n\nFailure to comply with this notice within the specified period will leave our client with no choice but to initiate legal proceedings to protect their interests, including filing a lawsuit with the competent courts.\n\nSincerely,",
+      "variables": {
+        "partyB.name": {
+          "label": "Debtor Name"
+        },
+        "amount": {
+          "label": "Amount Due"
+        },
+        "currency": {
+          "label": "Currency"
+        },
+        "dueDate": {
+          "label": "Final Due Date"
+        }
+      }
+    },
+    "resolution-v1": {
+      "name": "Board Resolution",
+      "content": "Board Resolution No. ({{resolutionNumber}})\n\nThe Board of Directors of {{companyName}} met on {{meetingDate}}, and has unanimously decided the following:\n\n{{resolutionDetails}}\n\nThe Board has authorized Mr./Ms. {{authorizedPerson}} to take all necessary measures to implement this resolution.\n\nSignatures of Board Members:",
+      "variables": {
+        "resolutionNumber": {
+          "label": "Resolution Number"
+        },
+        "companyName": {
+          "label": "Company Name"
+        },
+        "meetingDate": {
+          "label": "Meeting Date"
+        },
+        "resolutionDetails": {
+          "label": "Resolution Details"
+        },
+        "authorizedPerson": {
+          "label": "Authorized Person"
+        }
+      }
+    },
+    "poa-v1": {
+      "name": "Special Power of Attorney",
+      "content": "I, the undersigned, {{principalName}}, holding Civil ID No. {{principalId}}, in my capacity as ({{principalRole}}), hereby appoint Mr./Ms. {{agentName}}, holding Civil ID No. {{agentId}}, as my attorney-in-fact to represent me in:\n\n{{poaScope}}\n\nThis Power of Attorney is valid for {{validityPeriod}} from the date of issuance. The attorney-in-fact is not authorized to delegate this power to others without prior written consent.\n\nPrincipal Signature:",
+      "variables": {
+        "principalName": {
+          "label": "Principal Name"
+        },
+        "principalId": {
+          "label": "Principal Civil ID"
+        },
+        "principalRole": {
+          "label": "Capacity (Manager, Partner...)"
+        },
+        "agentName": {
+          "label": "Agent Name"
+        },
+        "agentId": {
+          "label": "Agent Civil ID"
+        },
+        "poaScope": {
+          "label": "Scope of Authority"
+        },
+        "validityPeriod": {
+          "label": "Validity Period"
+        }
+      }
+    },
+    "memo-v1": {
+      "name": "Internal Memo",
+      "content": "Internal Memo\n\nTo: {{toGroup}}\nFrom: {{fromGroup}}\nDate: {{memoDate}}\nSubject: {{memoSubject}}\n\n{{memoBody}}\n\nRegards,\n\n{{senderName}}",
+      "variables": {
+        "toGroup": {
+          "label": "To (Department/Group)"
+        },
+        "fromGroup": {
+          "label": "From (Department/Group)"
+        },
+        "memoDate": {
+          "label": "Memo Date"
+        },
+        "memoSubject": {
+          "label": "Subject"
+        },
+        "memoBody": {
+          "label": "Memo Content"
+        },
+        "senderName": {
+          "label": "Sender Name"
+        }
+      }
+    },
+    "meeting-v1": {
+      "name": "Meeting Minutes",
+      "content": "Meeting Minutes: {{meetingTitle}}\n\nDate: {{meetingDate}}\nLocation: {{location}}\nAttendees: {{attendees}}\n\nAgenda:\n{{agenda}}\n\nOutcomes & Actions:\n{{outcomes}}\n\nAdjourned at: {{endTime}}",
+      "variables": {
+        "meetingTitle": {
+          "label": "Meeting Title"
+        },
+        "meetingDate": {
+          "label": "Date"
+        },
+        "location": {
+          "label": "Location"
+        },
+        "attendees": {
+          "label": "Attendees"
+        },
+        "agenda": {
+          "label": "Agenda"
+        },
+        "outcomes": {
+          "label": "Outcomes"
+        },
+        "endTime": {
+          "label": "End Time"
+        }
+      }
+    },
+    "demand-v1": {
+      "name": "Final Demand Before Action",
+      "content": "To: {{recipientName}}\n\nSubject: Final Demand Notice\n\nPlease be advised that despite repeated requests to settle your outstanding debt of {{amount}} {{currency}}, we have yet to receive payment.\n\nConsequently, this serves as a final demand for payment no later than {{deadlineDate}}. Failure to pay will result in immediate legal action to recover the principal amount plus damages and costs without further notice.\n\nFrom: {{senderName}}",
+      "variables": {
+        "recipientName": {
+          "label": "Recipient Name"
+        },
+        "amount": {
+          "label": "Amount Due"
+        },
+        "currency": {
+          "label": "Currency"
+        },
+        "deadlineDate": {
+          "label": "Deadline Date"
+        },
+        "senderName": {
+          "label": "Sender Name"
+        }
+      }
+    },
+    "warning-v1": {
+      "name": "Employment Warning",
+      "content": "Warning Notice ({{warningLevel}})\n\nTo Employee: {{employeeName}}\nEmployee ID: {{employeeId}}\n\nRegarding the following violation:\n{{violationDesc}}\n\nYou are hereby formally warned. We expect a self-improvement in your conduct to avoid further disciplinary actions as per the labor law and internal regulations.\n\nHR Department\nEmployee Acknowledgment:",
+      "variables": {
+        "warningLevel": {
+          "label": "Warning Level (First, Second...)"
+        },
+        "employeeName": {
+          "label": "Employee Name"
+        },
+        "employeeId": {
+          "label": "Employee ID"
+        },
+        "violationDesc": {
+          "label": "Violation Description"
+        }
+      }
+    },
+    "delegation-v1": {
+      "name": "Delegation of Authority",
+      "content": "In my capacity as ({{principalRole}}), I hereby delegate authority to Mr./Ms. {{delegateName}} to perform {{authorityScope}} and represent the company before official entities between {{startDate}} and {{endDate}}.\n\nPrincipal:\nSignature:",
+      "variables": {
+        "principalRole": {
+          "label": "Principal Role"
+        },
+        "delegateName": {
+          "label": "Delegate Name"
+        },
+        "authorityScope": {
+          "label": "Authority Scope"
+        },
+        "startDate": {
+          "label": "Start Date"
+        },
+        "endDate": {
+          "label": "End Date"
+        }
+      }
+    },
+    "acceptance-v1": {
+      "name": "Job Acceptance Letter",
+      "content": "To HR Department - {{companyName}}\n\nI am pleased to formally accept the job offer for the position of {{jobTitle}}, as per the terms and conditions outlined in the offer letter.\n\nMy start date will be {{joiningDate}}.\n\nBest regards,\n\nName: {{candidateName}}\nSignature:",
+      "variables": {
+        "companyName": {
+          "label": "Company Name"
+        },
+        "jobTitle": {
+          "label": "Job Title"
+        },
+        "joiningDate": {
+          "label": "Start Date"
+        },
+        "candidateName": {
+          "label": "Candidate Name"
+        }
+      }
+    },
+    "resignation-v1": {
+      "name": "Resignation Receipt",
+      "content": "{{companyName}} hereby acknowledges receipt of the resignation submitted by Mr./Ms. {{employeeName}} on {{resignationDate}}. The last working day will be {{lastWorkingDay}}.\n\nThe company wishes him/her success in future endeavors.\n\nManager Signature:",
+      "variables": {
+        "companyName": {
+          "label": "Company Name"
+        },
+        "employeeName": {
+          "label": "Employee Name"
+        },
+        "resignationDate": {
+          "label": "Resignation Date"
+        },
+        "lastWorkingDay": {
+          "label": "Last Working Day"
+        }
+      }
+    },
+    "receipt-voucher-v1": {
+      "name": "Receipt Voucher",
+      "content": "Date: {{issueDate}}\r\nAmount: {{amount}} {{currency}}\r\n\r\nReceived from Mr./M/s: {{receivedFrom}}\r\nThe sum of: {{amountInWords}}\r\nFor the purpose of: {{purpose}}\r\n\r\nRecipient's Signature:\r\nName: {{recipientName}}\r\nSignature: {{recipientSignature}}"
+    },
+    "payment-voucher-v1": {
+      "name": "Payment Voucher",
+      "content": "Date: {{issueDate}}\r\nAmount: {{amount}} {{currency}}\r\n\r\nPaid to Mr./M/s: {{paidTo}}\r\nThe sum of: {{amountInWords}}\r\nFor the purpose of: {{purpose}}\r\n\r\nPayer's Signature:\r\nName: {{payerName}}\r\nSignature: {{payerSignature}}"
+    },
+    "salary-certificate-v1": {
+      "name": "Salary Certificate",
+      "content": "Date: {{issueDate}}\r\n\r\nTO WHOM IT MAY CONCERN\r\nSALARY CERTIFICATE\r\n\r\nThis is to certify that Mr./Ms. {{employeeName}}, {{nationality}} national, holding Civil ID No. {{civilId}}, has been working with us as \"{{position}}\" since {{joinDate}} and is currently employed with our company.\r\n\r\nHis/Her total monthly salary is {{totalSalary}} {{currency}} ({{amountInWords}}).\r\n\r\n{{#if bankName}}\r\nSalary is transferred to: {{bankName}}\r\nIBAN: {{iban}}\r\n{{/if}}\r\n\r\nThis certificate is issued upon the employee's request to be presented to whom it may concern, without any liability on the company towards third parties.\r\n\r\nAuthorized Signatory:\r\nName: {{managerName}}\r\nSignature: {{managerSignature}}"
+    },
+    "experience-certificate-v1": {
+      "name": "Experience Certificate",
+      "content": "Date: {{issueDate}}\r\n\r\nEXPERIENCE CERTIFICATE\r\n\r\nThis is to certify that Mr./Ms. {{employeeName}} was employed with our company as \"{{position}}\" from {{startDate}} to {{endDate}}.\r\n\r\n{{#if performance}}\r\nDuring his/her tenure, {{performance}}.\r\n{{/if}}\r\n\r\nWe wish him/her success in future endeavors.\r\n\r\nHuman Resources Department\r\nName: {{managerName}}\r\nSignature: {{managerSignature}}"
+    },
+    "job-offer-v1": {
+      "name": "Job Offer",
+      "content": "Date: {{issueDate}}\r\nTo: Mr./Ms. {{candidateName}}\r\n\r\nSubject: Job Offer\r\n\r\nWe are pleased to offer you the position of \"{{position}}\" with our company.\r\n\r\nOffer Details:\r\n- Expected Start Date: {{startDate}}\r\n- Basic Salary: {{salary}} {{currency}}\r\n- Monthly Allowances: {{allowances}} {{currency}}\r\n- Annual Vacation: {{vacation}} days\r\n\r\nThis offer is valid for one week from the date of issuance. Please sign a copy of this letter to accept the offer.\r\n\r\nSincerely,\r\n\r\nName: {{managerName}}\r\nSignature: {{managerSignature}}"
+    },
+    "clearance-letter-v1": {
+      "name": "Clearance Letter",
+      "content": "Date: {{issueDate}}\r\n\r\nCLEARANCE CERTIFICATE\r\n\r\nThis is to certify that Mr./M/s {{partyName}} (Ref: {{idNumber}}) has settled all dues and obligations towards the company regarding {{reason}}.\r\n\r\nAccordingly, the company clears him/her/them from any financial or material claims related to the past period up to this date.\r\n\r\nThis certificate does not waive any future obligations or valid warranties (if any).\r\n\r\nFor the Company:\r\nName: {{managerName}}\r\nSignature: {{managerSignature}}"
+    },
+    "noc-letter-v1": {
+      "name": "Noc Letter",
+      "content": "Date: {{issueDate}}\r\nTo: {{recipientAuthority}}\r\n\r\nSubject: No Objection Certificate (NOC)\r\n\r\nDear Sir/Madam,\r\n\r\nPlease be informed that we have no objection to Mr./Ms. {{employeeName}}, holding Civil ID No. {{civilId}}, regarding {{purpose}}, subject to your rules and regulations.\r\n\r\nThis certificate is issued upon his/her request without any liability on the company towards third parties.\r\n\r\nSincerely,\r\n\r\nName: {{managerName}}\r\nSignature: {{managerSignature}}"
+    },
+    "demand-letter-v1": {
+      "name": "Demand Letter",
+      "content": "Date: {{issueDate}}\r\nTo: {{debtorName}}\r\n\r\nSubject: Final Demand for Payment - Overdue Account\r\n\r\nDear Sir/Madam,\r\n\r\nPlease be advised that our records indicate an outstanding balance of {{amount}} {{currency}} ({{amountInWords}}) under Reference No. {{reference}}, which was due on {{dueDate}}.\r\n\r\nWe request that you remit the full amount by {{deadline}} to avoid any further legal action to recover the debt.\r\n\r\nWe hope to resolve this matter amicably and look forward to your prompt response.\r\n\r\nSincerely,\r\n\r\nName: {{senderName}}\r\nSignature: {{senderSignature}}"
+    },
+    "meeting-minutes-v1": {
+      "name": "Meeting Minutes",
+      "content": "MEETING MINUTES\r\n\r\nDate: {{meetingDate}}\r\nLocation: {{location}}\r\n\r\nAttendees:\r\n{{attendees}}\r\n\r\nAgenda:\r\n{{agenda}}\r\n\r\nDecisions & Recommendations:\r\n{{decisions}}\r\n\r\nMinutes prepared by:\r\nName: {{secretaryName}}\r\nSignature: {{secretarySignature}}"
+    },
+    "termination-letter-v1": {
+      "name": "Termination Letter",
+      "content": "Date: {{issueDate}}\r\nTo: Mr./Ms. {{employeeName}}\r\n\r\nSubject: Termination of Employment\r\n\r\nWe regret to inform you that your employment with the company will be terminated effective as of the close of business on {{lastWorkingDate}}.\r\n{{#if reason}}\r\nReason: {{reason}}.\r\n{{/if}}\r\n\r\nPlease contact the HR department to complete the clearance procedures and return any company property in your possession.\r\n\r\nWe thank you for your efforts during your time with us and wish you the best.\r\n\r\nFor the Company:\r\nName: {{managerName}}\r\nSignature: {{managerSignature}}"
+    },
+    "warning-letter-v1": {
+      "name": "Warning Letter",
+      "content": "Date: {{issueDate}}\r\nTo: Mr. {{recipientName}}\r\nAddress: {{recipientAddress}}\r\n\r\nSubject: {{subject}}\r\n\r\nDear Mr. {{recipientName}},\r\n{{body}}\r\n\r\nSincerely,\r\n\r\nSender,\r\nName: {{senderName}}\r\nSignature: {{senderSignature}}"
+    },
+    "trust-receipt-v1": {
+      "name": "Trust Receipt",
+      "content": "I, the undersigned, {{receiverName}}\r\nCivil ID No. {{receiverCivilId}}\r\nhave received from Mr. {{receivedFrom}}\r\nthe sum of {{amount}} {{currency}} ({{amountInWords}})\r\nin trust to be delivered to Mr. {{deliverTo}}.\r\nIf I fail to deliver this sum, I shall be considered a defaulter and embezzler of the trust, and I shall bear the resulting criminal and civil liability.\r\n\r\nThis is my acknowledgment thereof.\r\nAcknowledged by,\r\nName: {{receiverName}}\r\nSignature: {{receiverSignature}}\r\n\r\nWitness:\r\nName: {{witnessName}}\r\nSignature: {{witnessSignature}}"
+    }
+  }
+}

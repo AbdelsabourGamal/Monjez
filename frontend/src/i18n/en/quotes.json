@@ -1,0 +1,183 @@
+{
+  "tab": "Quotes",
+  "title": "Quotes & Proposals",
+  "details": "Quote Details",
+  "id": "Quote Number",
+  "issueDate": "Issue Date",
+  "expiryDate": "Expiry Date",
+  "validity": "Validity Period",
+  "temporary": "Temporary (Limited)",
+  "open": "Open (No Expiry)",
+  "currency": "Currency",
+  "items": "Line Items",
+  "addItem": "Add Custom Item",
+  "financials": "Financial Details",
+  "discountPercentage": "Discount (%)",
+  "taxPercentage": "Tax / VAT (%)",
+  "resetForm": "Reset Form",
+  "resetConfirm": "Are you sure you want to reset the form? All unsaved data will be lost.",
+  "clientInfo": "Client / Recipient",
+  "fromTemplate": "From Template",
+  "createCustom": "Create Custom",
+  "selectTemplate": "Select Template",
+  "selectLinkedId": "Select Linked ID",
+  "skipSelection": "Skip & Continue",
+  "expiryDateError": "Expiry date cannot be before issue date",
+  "percentageError": "Percentage must be between 0 and 100",
+  "positiveQtyError": "Quantity must be > 0",
+  "nonNegativePriceError": "Price cannot be negative",
+  "enterKeywords": "Enter keywords first",
+  "itemDescription": "Description",
+  "generateDesc": "Generate with AI",
+  "qty": "Qty",
+  "unitPrice": "Unit Price",
+  "item": "Item & Description",
+  "total": "Total",
+  "subtotal": "Subtotal",
+  "discount": "Discount",
+  "tax": "Tax",
+  "grandTotal": "Grand Total",
+  "amountInWords": "Amount in Words",
+  "quote": "Quotation",
+  "invoice": "Tax Invoice",
+  "quoteNo": "Quote No.",
+  "invoiceNo": "Invoice No.",
+  "whatsappShareText": "Hello, this is a {{type}} ({{idLabel}} {{id}}) from {{companyName}} with a total amount of {{amount}}.",
+  "shareLink": "Share Portal",
+  "payLink": "Payment Link",
+  "convertToInv": "Convert to Invoice",
+  "convertDoc": "Legal Document",
+  "convertCont": "Draft Contract",
+  "viewedOn": "Viewed on",
+  "to": "Bill To",
+  "companyName": "Company Name",
+  "companyAddress": "Address",
+  "companyPhone": "Phone",
+  "clientName": "Client Name",
+  "clientAddress": "Address",
+  "clientPhone": "Phone",
+  "date": "Date",
+  "validUntil": "Valid Until",
+  "quoteValidity": "Quote Validity",
+  "openValidity": "Open (No Expiry)",
+  "clientSignatureStamp": "Client E-Signature",
+  "signedOn": "Signed on",
+  "paymentInstructions": "Payment Instructions",
+  "emailReviewDetails": "Review details for {{amount}} covering: {{items}}",
+  "linkGenerated": "Secure payment link generated",
+  "payWith": "Pay with",
+  "shareVia": "Share via",
+  "paidStamp": "PAID",
+  "approvedStamp": "APPROVED",
+  "itemDescriptionPlaceholder": "Untitled Item",
+  "templates": {
+    "general-services": {
+      "name": "General Services",
+      "item0": ""
+    },
+    "web-development": {
+      "name": "Web Development",
+      "item0": "Website Design & UX/UI Mockups",
+      "item1": "Frontend Development (React/Next.js)",
+      "item2": "Backend Development (Node.js/Express)",
+      "item3": "Database Setup & Management (PostgreSQL)",
+      "item4": "Deployment & Hosting Setup"
+    },
+    "consulting-services": {
+      "name": "Consulting Services",
+      "item0": "Initial Business Analysis & Strategy Session",
+      "item1": "Market Research & Competitive Analysis Report",
+      "item2": "Implementation Roadmap & Recommendations"
+    },
+    "graphic-design": {
+      "name": "Graphic Design",
+      "item0": "Logo Design (3 Concepts & Revisions)",
+      "item1": "Brand Identity & Style Guide",
+      "item2": "Social Media Kit (Profile Pictures, Banners)"
+    },
+    "construction": {
+      "name": "Construction",
+      "item0": "Site Preparation & Excavation",
+      "item1": "Foundation & Concrete Work",
+      "item2": "Structural Framing",
+      "item3": "Electrical & Plumbing Installation"
+    },
+    "it-support": {
+      "name": "IT Support Contract",
+      "item0": "Monthly IT Support Retainer (up to 10 hours)",
+      "item1": "On-site Emergency Support (per hour)",
+      "item2": "Remote Assistance (per hour)"
+    },
+    "monthly-retainer": {
+      "name": "Monthly Retainer",
+      "item0": "Monthly Consulting Retainer"
+    },
+    "product-sale": {
+      "name": "Product Sale",
+      "item0": "Product A",
+      "item1": "Product B"
+    },
+    "event-photography": {
+      "name": "Event Photography",
+      "item0": "Full-Day Event Coverage (8 hours)",
+      "item1": "Additional Photographer",
+      "item2": "Photo Album (Hardcover, 50 pages)"
+    },
+    "social-media-management": {
+      "name": "Social Media Management",
+      "item0": "Monthly Social Media Management Package (3 platforms)",
+      "item1": "Content Creation (15 posts per month)",
+      "item2": "Paid Ad Campaign Management"
+    },
+    "digital-marketing": {
+      "name": "Digital Marketing Campaign",
+      "item0": "SEO Audit & Keyword Research",
+      "item1": "Content Strategy Plan (Quarterly)",
+      "item2": "Monthly Social Media Ads Management",
+      "item3": "Email Marketing Campaign Setup & Automation"
+    },
+    "interior-design": {
+      "name": "Interior Design Project",
+      "item0": "Initial Consultation & Site Visit",
+      "item1": "Mood Board & Concept Design",
+      "item2": "3D Renderings (per room)",
+      "item3": "Furniture & Materials Sourcing",
+      "item4": "Project Management & Supervision"
+    },
+    "catering-event": {
+      "name": "Event Catering",
+      "item0": "Buffet Menu - International Cuisine (per person)",
+      "item1": "Beverage Package - Juices & Water (per person)",
+      "item2": "Service Staff (4 hours, per staff)",
+      "item3": "Equipment Rental (tables, chairs, linens)"
+    },
+    "saas-subscription": {
+      "name": "SaaS Subscription",
+      "item0": "Basic Plan (Monthly Subscription)",
+      "item1": "Professional Plan (Monthly Subscription)",
+      "item2": "Enterprise Plan (Annual Subscription)",
+      "item3": "One-time Onboarding & Training Fee"
+    },
+    "video-production": {
+      "name": "Video Production",
+      "item0": "Pre-production: Concept & Scripting",
+      "item1": "Full-Day Filming Shoot (with equipment)",
+      "item2": "Video Editing & Post-production (up to 3 min video)",
+      "item3": "Motion Graphics & Title Package",
+      "item4": "Royalty-free Music License"
+    },
+    "car-rental": {
+      "name": "Car Rental",
+      "item0": "Sedan (e.g., Toyota Camry) - Daily Rental",
+      "item1": "SUV (e.g., Toyota Prado) - Daily Rental",
+      "item2": "Full Insurance Coverage (per day)",
+      "item3": "Additional Driver Fee (one-time)"
+    },
+    "printing-services": {
+      "name": "Printing Services",
+      "item0": "Business Cards (500 pcs, double-sided, matte finish)",
+      "item1": "A4 Flyers (1000 pcs, color, 150gsm)",
+      "item2": "Roll-up Banner (85x200 cm, with stand)"
+    }
+  }
+}

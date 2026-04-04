@@ -1,0 +1,20 @@
+{
+  "filename": {
+    "quote": "Quote_{{id}}",
+    "invoice": "Invoice_{{id}}",
+    "contract": "Contract_{{filename}}",
+    "document": "Document_{{filename}}",
+    "pdf": "{{name}}.pdf",
+    "docx": "{{name}}.docx"
+  },
+  "errors": {
+    "pdfFailed": "Failed to generate PDF. Please check console for details.",
+    "fontFailed": "Failed to export PDF. Please check internet connection for Arabic font."
+  },
+  "invoice": {
+    "title": "Invoice"
+  },
+  "quote": {
+    "title": "Quote"
+  }
+}
